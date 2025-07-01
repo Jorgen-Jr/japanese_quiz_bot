@@ -15,7 +15,7 @@ A Telegram bot that helps users study for the JLPT (Japanese Language Proficienc
 
 ## Tools used
 
-- [ZukiJourney](https://zukijourney.com/) (local Ollama LLM gateway)
+- [ZukiJourney](https://zukijourney.com/)
 - [OpenAI client](https://github.com/openai/openai-python)
 - [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot)
 
