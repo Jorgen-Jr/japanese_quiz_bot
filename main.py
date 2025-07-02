@@ -34,16 +34,19 @@ Include:
 - question (Inform the level of the question)
 - 4 options (A, B, C, D)
 - correct option index (0-based) without this information, the final JSON object will become unusable.
-- explanation for the correct answer, keep it as short and concise as possible (both in japanese and translated inside the same property as STRING)
+- explanation for the correct answer, Simple text with 200 characters and 1 line feed max, explaining why the correct option is correct, use english and japanese to explain.
 
-Return ONLY the JSON object. Folow the scructure strictly, Example:
+Return ONLY the JSON object. Folow the scructure strictly, Follow these examples:
 
-{
-"question": "[N5] What does the word '水' mean?",
-"options": ["Fire", "Tree", "Water", "Wind"],
-"correct_option_id": 2,
-"explanation": "'水' means 'water' in Japanese. It's pronounced 'mizu'."
-}
+```jsonl
+{"question":"[N1] 彼の話し方は論理的で、説得力に_______。","options":["富んでいる","欠けている","足りている","優れている"],"correct_option_id":0,"explanation":"『説得力に富む』 means 'full of persuasiveness'."}
+{"question":"[N5] How do you say 'river' in Japanese?","options":["山","川","海","空"],"correct_option_id":1,"explanation":"『川』 means 'river' and is pronounced 'かわ'."}
+{"question":"[N4] 昨日は友達と公園で_______。","options":["遊びました","勉強しました","働きました","休みました"],"correct_option_id":0,"explanation":"『遊びました』 means 'played'. Yesterday, played with friends in the park."}
+{"question":"[N3] この料理は見た目は美しい_______、味は普通だ。","options":["けれど","ので","から","が"],"correct_option_id":3,"explanation":"『が』 is used to express contrast politely. Although it looks beautiful, the taste is ordinary."}
+{"question":"[N2] 彼女は優しい_______、厳しい時もある。","options":["けれども","ので","から","のに"],"correct_option_id":0,"explanation":"『けれども』 means 'although'. She is kind, but sometimes strict."}
+{"question":"[N1] この理論は複雑で、理解するのが_______。","options":["難しい","簡単な","早い","遅い"],"correct_option_id":0,"explanation":"『難しい』 means 'difficult'. This theory is complex and hard to understand."}
+{"question":"[N5] What does the kanji '犬' mean?","options":["Cat","Bird","Dog","Fish"],"correct_option_id":2,"explanation":"『犬』 means 'dog' and is pronounced 'いぬ'."}
+`
 """
 
 EXPLAIN_PROMPT = """

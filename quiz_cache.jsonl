@@ -16,3 +16,360 @@
 {"question": "[N3] 私はその会社の_______が気に入って、入社を決めました。", "options": ["社長", "社員", "会社の文化", "会社の規模"], "correct_option_id": 2, "explanation": "会社の文化が気に入って入社を決めた、という意味です。'が'は理由を表す。The correct answer is '会社の文化' because it refers to the company culture, which is the reason for deciding to join the company."}
 {"question": "[N4] 田中さんは毎朝、_______ に走ります。友達と一緒に公園を回っています。", "options": ["ために", "ながら", "ためにに", "と"], "correct_option_id": 1, "explanation": "正解は'ながら'です。'ながら'は、あることをしている間にもう一つのことをするときに使います。 'I run in the park while I am with my friends.'"}
 {"question": "[N4] 私の兄は毎日_______勉強しています。今日も午前中から夜まで勉強しました。", "options": ["に", "を", "で", "と"], "correct_option_id": 0, "explanation": "に is used to indicate the duration of an action. には時間の期間を表す。"}
+{"question": "[N3] この本は_______が書いたと言われています。", "options": ["誰か", "誰でも", "誰でもが", "誰かが"], "correct_option_id": 3, "explanation": "この文では、誰かが書いたと言われていることを表すため、'誰かが'が正解です。It's the correct sentence to express that someone wrote this book."}
+{"question": "[N5] What does the word '水' mean?", "options": ["Fire", "Tree", "Water", "Wind"], "correct_option_id": 2,"explanation": "'水' means 'water' in Japanese. It's pronounced 'mizu'."}
+{"question":"[N5] What does the kanji '火' mean?","options":["Water","Fire","Tree","Gold"],"correct_option_id":1,"explanation":"'火' means 'fire'. Pronounced 'hi' or 'ka'."}
+{"question":"[N5] こんにちは。ここで “こんにちは” は何ですか？","options":["Morning greeting","Afternoon greeting","Evening greeting","Goodbye"],"correct_option_id":1,"explanation":"『こんにちは』は午後の挨拶です。It’s used in the afternoon."}
+{"question":"[N4] 私は来週、京都へ旅行_______予定です。","options":["に","が","を","で"],"correct_option_id":0,"explanation":"'〜予定です'には 'に' を使います。'予定にしています' means planned to travel."}
+{"question":"[N4] このケーキは甘い_______、おいしいです。","options":["けれど","が","ので","から"],"correct_option_id":1,"explanation":"'甘いが、おいしい' uses 'が' to contrast two qualities. Indicates slight contrast."}
+{"question":"[N4] 田中さんは先週東京に行きました。その時、___友達に会いました。","options":["でも","しか","だけ","しかも"],"correct_option_id":2,"explanation":"'だけ' means 'only'. She met only a friend."}
+{"question":"[N3] 天気が良かったので、公園で散歩_______と思いました。","options":["しよう","したい","しようと","します"],"correct_option_id":2,"explanation":"'〜と思いました'とセットで 'しようとしました' は意志や計画を表します。"}
+{"question":"[N3] 彼がそんなことを言うとは、驚く_______何もない。","options":["のに","を","に","では"],"correct_option_id":2,"explanation":"'驚くに何もない'は '〜するに値しない／不必要' の形。" }
+{"question":"[N3] この漢字 '勤' の読み方として正しいのは？","options":["つと.める","はたら.く","ね.る","いそ.ぐ"],"correct_option_id":0,"explanation":"『勤』は『つとめる』と読みます。勤める＝to work."}
+{"question":"[N3] ～ばかりか」：彼は英語ばかりか、日本語も上手です。ここで 'ばかりか' の意味？","options":["だけではなく","理由を表す","時間を表す","譲歩"],"correct_option_id":0,"explanation":"'ばかりか' は「〜だけでなく」の意味で使います。" }
+{"question":"[N3] 私は彼に会った瞬間、誰だか_______ました。","options":["思った","分かった","書いた","聞いた"],"correct_option_id":1,"explanation":"'誰だか分かる' = 'I recognized who he was'. 分かる＝to understand/recognize."}
+{"question":"[N5] What is the meaning of the verb '食べる'?","options":["To drink","To read","To eat","To sleep"],"correct_option_id":2,"explanation":"'食べる' means 'to eat'. It’s a basic verb in Japanese, pronounced 'taberu'."}
+{"question":"[N5] Which of these is the correct hiragana for '山'?","options":["やま","かわ","もり","うみ"],"correct_option_id":0,"explanation":"'山' means 'mountain' and is read as 'やま' (yama) in hiragana."}
+{"question":"[N4] 昨日、雨が降った_______、試合は中止になった。","options":["ので","のに","でも","が"],"correct_option_id":0,"explanation":"『ので』 indicates a reason. The game was canceled because it rained."}
+{"question":"[N4] 図書館では静かにする_______です。","options":["こと","の","わけ","もの"],"correct_option_id":0,"explanation":"『〜することです』 is used to express rules or obligations, e.g., 'You must be quiet'."}
+{"question":"[N4] この漢字『速』の意味として正しいのはどれ？","options":["Slow","Fast","Heavy","Light"],"correct_option_id":1,"explanation":"『速』 means 'fast' or 'quick'. It's read as 'はやい' in kun-yomi."}
+{"question":"[N3] 先生に叱られたことは、一生忘れられない_______思い出です。","options":["ような","ほど","ように","らしい"],"correct_option_id":0,"explanation":"『〜ような思い出』 describes the type of memory. It’s a memory 'like that'."}
+{"question":"[N3] この問題は小学生_______難しいと思います。","options":["には","では","にも","より"],"correct_option_id":0,"explanation":"『〜には〜すぎる』 expresses that something is too much for someone. It’s too hard for children."}
+{"question":"[N3] 何度も注意したのに、彼は全く聞こうと_______。","options":["しません","しないです","している","しなかった"],"correct_option_id":0,"explanation":"『〜ようとしない』 means 'refuses to do' or 'doesn’t even try to'."}
+{"question":"[N5] Which number is '七' in Japanese?","options":["3","5","7","9"],"correct_option_id":2,"explanation":"'七' is the kanji for '7'. It’s pronounced 'shichi' or 'nana'."}
+{"question":"[N4] 日本語を話すのが上手になるには、毎日練習する_______。","options":["しかない","かもしれない","ほうがいい","ことになる"],"correct_option_id":0,"explanation":"『〜しかない』 means 'there's no other way but to'. Practice is the only option."}
+{"question":"[N5] What is the hiragana reading of the word '先生'?","options":["せんせい","せいせん","さんせい","せんさん"],"correct_option_id":0,"explanation":"『先生』 is read as 'せんせい' and means 'teacher'."}
+{"question":"[N5] What does the word '猫' mean in English?","options":["Dog","Mouse","Cat","Bird"],"correct_option_id":2,"explanation":"『猫』 means 'cat' in English. It’s pronounced 'neko'."}
+{"question":"[N4] 彼はいつも遅刻する_______、今日も遅れた。","options":["ので","のに","くせに","わけで"],"correct_option_id":0,"explanation":"『ので』 expresses a reason — he's always late, so today too he was."}
+{"question":"[N4] この料理は甘すぎて、_______食べられません。","options":["まったく","まさか","ほとんど","ぜったいに"],"correct_option_id":0,"explanation":"『まったく〜ない』 means 'not at all'. The dish is too sweet to eat."}
+{"question":"[N4] この漢字『強』の意味として正しいのはどれ？","options":["Weak","Strong","Short","Clean"],"correct_option_id":1,"explanation":"『強』 means 'strong'. It's read as 'つよい' or 'きょう'."}
+{"question":"[N3] 急に雨が降ってきた_______、出かけるのをやめた。","options":["ために","ことから","せいで","ので"],"correct_option_id":3,"explanation":"『ので』 is used for explaining reasons in a soft or neutral way."}
+{"question":"[N3] あの選手は速く走れる_______、泳ぐのも得意だ。","options":["ばかりか","ほど","なら","ように"],"correct_option_id":0,"explanation":"『ばかりか』 means 'not only... but also'. He can run and swim well."}
+{"question":"[N3] 明日は試験がある_______、遊びに行けません。","options":["から","ので","でも","にしても"],"correct_option_id":0,"explanation":"『〜から』 expresses a reason. Because there’s an exam, I can’t go out."}
+{"question":"[N3] このレストランは安い_______、とてもおいしいです。","options":["のに","くせに","わりに","だけど"],"correct_option_id":2,"explanation":"『〜わりに』 means 'although' with a nuance of unexpectedness: 'cheap but tasty'."}
+{"question":"[N3] 彼の話は本当のようだが、まだ信じる_______。","options":["わけがない","ことにする","には早い","ようだ"],"correct_option_id":2,"explanation":"『〜には早い』 means 'it's too soon to...'. It’s too soon to believe."}
+{"question":"[N5] What does '学生' mean in English?","options":["Teacher","Student","Doctor","Parent"],"correct_option_id":1,"explanation":"『学生』 means 'student'. It's pronounced 'がくせい' (gakusei)."}
+{"question":"[N5] Which one is the hiragana for '花'?","options":["はな","ほし","やま","みず"],"correct_option_id":0,"explanation":"『花』 is read as 'はな' and means 'flower'."}
+{"question":"[N4] 雨の日は出かけたくない人も多い。ここで『出かけたくない』の文法形式は？","options":["意向形","可能形","否定の意志形","命令形"],"correct_option_id":2,"explanation":"『出かけたくない』は『〜たい』の否定で、否定の意志を表します。"}
+{"question":"[N4] このスープはちょっと熱すぎるから、_______冷ましてから飲んでください。","options":["すぐ","もう","いったん","ずっと"],"correct_option_id":2,"explanation":"『いったん』 means 'once' or 'temporarily'. Cool it down once before drinking."}
+{"question":"[N4] この漢字『止』の意味として正しいのはどれ？","options":["Run","Open","Stop","Close"],"correct_option_id":2,"explanation":"『止』 means 'stop'. It's read as 'とまる' or 'やめる' depending on context."}
+{"question":"[N3] 先生に相談した_______、安心しました。","options":["のに","から","ことで","ところで"],"correct_option_id":2,"explanation":"『〜たことで』 indicates cause/reason. After consulting, I felt relieved."}
+{"question":"[N3] 彼は忙しい_______、手伝ってくれた。","options":["くせに","のに","ながら","のだから"],"correct_option_id":1,"explanation":"『〜のに』 is used to express contradiction. He helped despite being busy."}
+{"question":"[N3] この問題は簡単すぎて、説明する_______でもない。","options":["こと","わけ","ほど","までも"],"correct_option_id":3,"explanation":"『〜までもない』 means 'no need to even...'. It's too simple to explain."}
+{"question":"[N3] 日本に来た_______、富士山を見てみたいです。","options":["つもりで","ときに","からには","ように"],"correct_option_id":2,"explanation":"『からには』 means 'now that (you do something)...'. Implies obligation or goal."}
+{"question":"[N3] この仕事は、誰にでもできる_______、簡単とは言えない。","options":["としても","ながら","ものの","ほど"],"correct_option_id":2,"explanation":"『〜ものの』 means 'although'. It’s not easy even if anyone can do it."}
+{"question":"[N5] What does the verb '見る' mean?","options":["To look","To run","To write","To eat"],"correct_option_id":0,"explanation":"『見る』 means 'to look' or 'to watch'. It’s pronounced 'miru'."}
+{"question":"[N5] Which of these means 'book' in Japanese?","options":["ほん","ひと","ねこ","みず"],"correct_option_id":0,"explanation":"The word for 'book' is 『本』, read as 'ほん' (hon)."}
+{"question":"[N4] 昨日買ったケーキは思ったより_______でした。","options":["おいしい","おいしくない","おいしかった","おいしくなかった"],"correct_option_id":2,"explanation":"『おいしかった』 is the past form of 'delicious'. It tasted better than expected."}
+{"question":"[N4] 駅まで走ったら、電車に_______乗れました。","options":["ぎりぎり","ちゃんと","すぐに","ゆっくり"],"correct_option_id":0,"explanation":"『ぎりぎり』 means 'just barely'. Just caught the train."}
+{"question":"[N4] この漢字『住』の正しい意味は？","options":["To visit","To live","To eat","To leave"],"correct_option_id":1,"explanation":"『住』 means 'to live/reside'. It’s read as 'すむ' or 'じゅう'."}
+{"question":"[N3] 時間に間に合うように、早く出る_______。","options":["ことだ","わけだ","はずだ","つもりだ"],"correct_option_id":0,"explanation":"『〜ことだ』 is used for giving advice. You should leave early."}
+{"question":"[N3] お金がないからといって、悪いことをしていい_______ではない。","options":["もの","こと","わけ","よう"],"correct_option_id":2,"explanation":"『〜わけではない』 means 'does not mean that'. Being poor doesn’t justify crime."}
+{"question":"[N3] 山田さんが来ない_______、会議を始めましょう。","options":["うちに","うえで","うちでは","うちにして"],"correct_option_id":0,"explanation":"『〜うちに』 means 'while'. Let’s begin while Yamada-san isn’t here."}
+{"question":"[N3] その映画は、話が面白い_______、映像もきれいだった。","options":["だけでなく","のに","しかも","とともに"],"correct_option_id":0,"explanation":"『だけでなく』 means 'not only... but also'. The movie was great in both plot and visuals."}
+{"question":"[N3] この問題は、もう少し考えたほうがいいような_______がする。","options":["もの","わけ","こと","気"],"correct_option_id":3,"explanation":"『気がする』 expresses a hunch/feeling. 'I feel like we should think more about it'."}
+{"question":"[N2] 彼の話し方にはどこか自信_______ものがあった。","options":["げな","っぽい","らしい","そうな"],"correct_option_id":0,"explanation":"『〜げ』 is used to express an apparent emotion or state. '自信げ' means 'looking confident'."}
+{"question":"[N2] 彼女は忙しいと言いながら、映画に行く_______はあるようだ。","options":["ひま","つもり","気配","見込み"],"correct_option_id":0,"explanation":"『ひま（暇）』 means free time. She claims she's busy but clearly has time for a movie."}
+{"question":"[N2] 経験がない_______、その仕事は難しいと思います。","options":["にしては","にしても","だけあって","からこそ"],"correct_option_id":1,"explanation":"『〜にしても』 expresses concession. Even without experience, the job is tough."}
+{"question":"[N2] この料理は見た目_______味も素晴らしい。","options":["ばかりか","どころか","にしては","にしても"],"correct_option_id":0,"explanation":"『ばかりか』 means 'not only... but also'. Not only the appearance, but also the taste is great."}
+{"question":"[N2] あの人は先生である_______、生徒の意見をよく聞く。","options":["にもかかわらず","からには","だけあって","にしては"],"correct_option_id":2,"explanation":"『〜だけあって』 is used to affirm qualities that match expectations. As expected of a teacher, they listen well."}
+{"question":"[N1] いくら頼まれても、それは私のやる_______ことではない。","options":["べき","わけ","べく","はず"],"correct_option_id":2,"explanation":"『〜べく』 is a literary expression meaning 'in order to' or 'intended to'. Here, it negates duty or intention."}
+{"question":"[N1] この難題を一人で解決するのは、彼_______して初めて可能になる。","options":["において","にかけて","をもって","によって"],"correct_option_id":2,"explanation":"『〜をもって』 is a formal expression for 'by means of'. Only he could handle it."}
+{"question":"[N1] 彼は怒りを_______、冷静に話し続けた。","options":["こらえて","たえて","こめて","たもって"],"correct_option_id":0,"explanation":"『怒りをこらえる』 means 'to hold back anger'. He stayed calm despite being angry."}
+{"question":"[N1] 知らなかったとはいえ、彼の行動は非難_______だ。","options":["の的","せざるを得ない","されかねない","にたえない"],"correct_option_id":3,"explanation":"『非難にたえない』 means 'cannot avoid criticism'. His action deserves blame."}
+{"question":"[N2] 彼は努力したが、成功には_______なかった。","options":["届か","達し","至ら","及ば"],"correct_option_id":3,"explanation":"『〜及ばなかった』 means 'fell short of'. His efforts weren’t enough for success."}
+{"question":"[N5] Which of the following means 'dog' in Japanese?","options":["ねこ","いぬ","とり","うま"],"correct_option_id":1,"explanation":"『いぬ（犬）』 means 'dog'. It's a basic N5-level word."}
+{"question":"[N4] 毎朝ジョギングをしている彼は、健康_______だ。","options":["らしい","すぎる","みたい","になる"],"correct_option_id":0,"explanation":"『〜らしい』 expresses a typical characteristic. He looks very healthy."}
+{"question":"[N2] あのレストランは味も雰囲気もよく、予約_______の人気だ。","options":["だらけ","ぬき","まみれ","殺到"],"correct_option_id":3,"explanation":"『予約殺到』 means 'reservations are flooding in'. It’s a common collocation."}
+{"question":"[N1] 彼の態度はあまりにも失礼で、見るに_______。","options":["たえなかった","たまらなかった","くるしかった","しかたなかった"],"correct_option_id":0,"explanation":"『見るにたえない』 means 'unbearable to look at'. It’s a formal N1 phrase."}
+{"question":"[N3] 日本に行くなら、京都_______行ってみたいです。","options":["こそ","でも","ほど","さえ"],"correct_option_id":0,"explanation":"『〜こそ』 emphasizes choice. 'Kyoto is exactly where I want to go'."}
+{"question":"[N5] What does 'ありがとう' mean?","options":["Goodbye","Thank you","Sorry","See you"],"correct_option_id":1,"explanation":"『ありがとう』 means 'thank you'. A core greeting in Japanese."}
+{"question":"[N4] 今日は寒い_______、風も強いです。","options":["ばかりか","し","から","にしては"],"correct_option_id":1,"explanation":"『〜し』 is used to list reasons. 'It’s cold and also windy'."}
+{"question":"[N2] 電車が遅れたのは事故があった_______です。","options":["もの","わけ","せい","から"],"correct_option_id":2,"explanation":"『〜せい』 indicates blame or cause. The accident caused the delay."}
+{"question":"[N1] 大事な話だから、冗談_______言わないでくれ。","options":["ぬきで","ようで","とともに","にして"],"correct_option_id":0,"explanation":"『冗談ぬきで』 means 'no jokes'. It's often used to stress seriousness."}
+{"question":"[N3] このスマホは性能もいいし、値段も_______。","options":["手軽だ","安っぽい","高すぎる","それほど"],"correct_option_id":0,"explanation":"『手軽』 means 'reasonable' or 'affordable'. A good fit for this context."}
+{"question":"[N5] What does '水' mean in English?","options":["Fire","Water","Earth","Wind"],"correct_option_id":1,"explanation":"『水』 means 'water' and is pronounced 'みず'."}
+{"question":"[N4] この本は難しい_______、面白いです。","options":["けれど","ので","から","ため"],"correct_option_id":0,"explanation":"『けれど』 means 'although'. The book is difficult but interesting."}
+{"question":"[N3] 彼は忙しい_______、いつも時間を作ってくれる。","options":["のに","くせに","ながら","から"],"correct_option_id":0,"explanation":"『のに』 expresses contrast or unexpected result. Although busy, he always makes time."}
+{"question":"[N2] この町は観光地_______、交通の便がいい。","options":["としては","にしては","にしても","ばかりか"],"correct_option_id":1,"explanation":"『にしては』 indicates something is unexpected given the category. For a tourist spot, transport is good."}
+{"question":"[N1] 彼の説明は分かりやすい_______、詳細が欠けている。","options":["反面","一方","とはいえ","にしても"],"correct_option_id":0,"explanation":"『反面』 means 'on the other hand', showing contrasting points."}
+{"question":"[N5] How do you say 'good morning' in Japanese?","options":["こんばんは","おはようございます","こんにちは","さようなら"],"correct_option_id":1,"explanation":"'おはようございます' means 'good morning'."}
+{"question":"[N4] 夏休みはたくさん遊びたい_______、宿題もやらなければならない。","options":["けれど","けど","のに","から"],"correct_option_id":1,"explanation":"『けど』 means 'but'. You want to play but must do homework."}
+{"question":"[N3] このレストランは値段が高い_______、味は最高です。","options":["が","けど","のに","のだから"],"correct_option_id":0,"explanation":"『が』 is used to express contrast politely."}
+{"question":"[N2] 交通事故に遭わない_______、安全運転を心掛けてください。","options":["ために","ように","ことに","ための"],"correct_option_id":1,"explanation":"『〜ように』 means 'so that'. Drive safely so you don't get in an accident."}
+{"question":"[N1] 今回のプロジェクトは彼の力量を超えていると_______。","options":["考えられる","思われる","判断される","認められる"],"correct_option_id":1,"explanation":"『思われる』 means 'it is thought'. The project exceeds his ability."}
+{"question":"[N5] What does the word '友達' mean?","options":["Friend","Teacher","Parent","Student"],"correct_option_id":0,"explanation":"『友達』 means 'friend'. Pronounced 'ともだち'."}
+{"question":"[N4] 彼は勉強が得意_______、スポーツも上手です。","options":["ながら","だけでなく","ばかりか","にしても"],"correct_option_id":2,"explanation":"『ばかりか』 means 'not only... but also'. He is good at studying and sports."}
+{"question":"[N3] 新しい仕事に慣れる_______、少し時間がかかるかもしれません。","options":["まで","までに","までの","までだ"],"correct_option_id":0,"explanation":"『〜まで』 means 'until'. It may take some time to get used to the new job."}
+{"question":"[N2] 日本の伝統文化について深く理解することは、難しい_______、非常に重要です。","options":["ながら","ものの","にしては","とはいえ"],"correct_option_id":3,"explanation":"『とはいえ』 means 'although'. Although difficult, it’s very important."}
+{"question":"[N1] 彼の話は一見もっともらしいが、よく考えると_______。","options":["矛盾している","納得できる","簡単だ","明らかだ"],"correct_option_id":0,"explanation":"『矛盾している』 means 'contradictory'. His story looks plausible but is contradictory."}
+{"question":"[N5] Which kanji means 'school'?","options":["学校","会社","病院","図書館"],"correct_option_id":0,"explanation":"『学校』 means 'school' and is read as 'がっこう'."}
+{"question":"[N4] 今日は雨が降っているので、出かけるのを_______。","options":["やめた","やめる","やめよう","やめたい"],"correct_option_id":2,"explanation":"『やめよう』 is volitional form meaning 'let’s stop' or 'I will stop'."}
+{"question":"[N3] 旅行の計画は来週までに決めておかなければならない_______。","options":["だろう","はずだ","らしい","ものだ"],"correct_option_id":3,"explanation":"『〜ものだ』 is used to express obligation or strong advice."}
+{"question":"[N2] 健康のためには毎日適度な運動を続けることが大切_______言われている。","options":["だと","であると","と","とされて"],"correct_option_id":3,"explanation":"『とされている』 means 'is said/considered to be'. It is said continuing exercise is important."}
+{"question":"[N1] 彼は仕事の失敗を認めず、責任を他人に_______。","options":["押し付けた","押し入れた","押し上げた","押し戻した"],"correct_option_id":0,"explanation":"『押し付ける』 means 'to force or shift responsibility onto others'."}
+{"question":"[N5] What is the meaning of '学校'?","options":["Hospital","Company","School","Library"],"correct_option_id":2,"explanation":"『学校』 means 'school' and is pronounced 'がっこう'."}
+{"question":"[N4] 彼は約束を守らなかったので、みんなから_______思われている。","options":["信用されて","信頼されて","嫌われて","尊敬されて"],"correct_option_id":2,"explanation":"『嫌われている』 means 'being disliked'. He is disliked because he broke promises."}
+{"question":"[N3] この映画は子供でも理解できる_______、内容が簡単です。","options":["くらい","ほど","ぐらい","くらいに"],"correct_option_id":1,"explanation":"『ほど』 is used to express extent. The content is simple enough even for children."}
+{"question":"[N2] 彼は努力した_______、成功できなかった。","options":["ものの","からといって","とはいえ","にしては"],"correct_option_id":0,"explanation":"『ものの』 means 'although'. He tried hard but failed."}
+{"question":"[N1] 彼女は仕事の結果について厳しい評価を_______。","options":["下した","出した","受けた","取った"],"correct_option_id":0,"explanation":"『評価を下す』 means 'to give an evaluation' or 'make a judgment'."}
+{"question":"[N5] How do you say 'thank you' in Japanese?","options":["こんにちは","ありがとう","さようなら","おはよう"],"correct_option_id":1,"explanation":"'ありがとう' means 'thank you'."}
+{"question":"[N4] 私は毎朝6時に_______。","options":["起きます","寝ます","食べます","勉強します"],"correct_option_id":0,"explanation":"『起きます』 means 'to wake up' or 'to get up'."}
+{"question":"[N3] このレストランは値段が高い_______、味はいいです。","options":["けれども","けど","が","のに"],"correct_option_id":2,"explanation":"『が』 is used to show contrast politely."}
+{"question":"[N2] 彼の説明はわかりやすい_______、もう少し詳しく話してほしい。","options":["ものの","けれども","にしては","とはいえ"],"correct_option_id":1,"explanation":"『けれども』 means 'although' or 'but'. The explanation is clear but more detail is wanted."}
+{"question":"[N1] その議論は根拠がなく、説得力に_______。","options":["欠けている","優れている","満ちている","富んでいる"],"correct_option_id":0,"explanation":"『説得力に欠ける』 means 'lacking persuasiveness'."}
+{"question":"[N5] What does '水曜日' mean?","options":["Monday","Tuesday","Wednesday","Thursday"],"correct_option_id":2,"explanation":"『水曜日』 means 'Wednesday' and is pronounced 'すいようび'."}
+{"question":"[N4] 私は毎日学校へ_______。","options":["行きます","帰ります","来ます","座ります"],"correct_option_id":0,"explanation":"『行きます』 means 'to go'. The sentence means 'I go to school every day'."}
+{"question":"[N3] 彼は遅刻したが、先生は怒らなかった_______。","options":["ものの","のに","けれど","ながら"],"correct_option_id":0,"explanation":"『ものの』 means 'although'. Although he was late, the teacher didn’t get angry."}
+{"question":"[N2] 新しいシステムは便利だ_______、使い方が難しい。","options":["が","けれども","のに","にもかかわらず"],"correct_option_id":1,"explanation":"『けれども』 means 'but' or 'although'. The new system is convenient but hard to use."}
+{"question":"[N1] 彼の意見はいつも論理的で、説得力に_______。","options":["富んでいる","欠けている","足りている","優れている"],"correct_option_id":0,"explanation":"『説得力に富む』 means 'to be full of persuasiveness'."}
+{"question":"[N5] Which word means 'cat' in Japanese?","options":["いぬ","ねこ","とり","うま"],"correct_option_id":1,"explanation":"『ねこ』 means 'cat'. A basic N5 vocabulary word."}
+{"question":"[N4] この店はサービスが_______いい。","options":["とても","あまり","そんなに","ぜんぜん"],"correct_option_id":0,"explanation":"『とても』 means 'very'. The sentence says the service is very good."}
+{"question":"[N3] 彼女は日本語が上手だ_______、まだ勉強中だ。","options":["けれど","けど","が","のに"],"correct_option_id":3,"explanation":"『のに』 expresses contradiction. Although she is good, she is still studying."}
+{"question":"[N2] 新しい企画は期待されている_______、成功するかどうかはまだ分からない。","options":["が","けれども","のに","とはいえ"],"correct_option_id":3,"explanation":"『とはいえ』 means 'although'. Although it’s expected, success is uncertain."}
+{"question":"[N1] この論文は独創的で、学会で高く_______。","options":["評価された","評価されたり","評価する","評価しない"],"correct_option_id":0,"explanation":"『高く評価される』 means 'to be highly evaluated' or 'praised'."}
+{"question":"[N5] What is the meaning of '先生'?","options":["Student","Teacher","Doctor","Engineer"],"correct_option_id":1,"explanation":"『先生』 means 'teacher' and is pronounced 'せんせい'."}
+{"question":"[N4] 彼は毎日ジョギングをしているので、体が_______。","options":["弱い","強い","疲れた","軽い"],"correct_option_id":1,"explanation":"『強い』 means 'strong'. Jogging daily makes the body strong."}
+{"question":"[N3] この本は難しい_______、面白いです。","options":["けれど","ので","から","が"],"correct_option_id":0,"explanation":"『けれど』 means 'although'. The book is difficult but interesting."}
+{"question":"[N2] 彼は仕事が忙しい_______、時間を作って会いに来てくれた。","options":["けれども","のに","のだから","から"],"correct_option_id":0,"explanation":"『けれども』 means 'although'. Despite being busy, he made time to visit."}
+{"question":"[N1] 彼女は意見を述べる際、常に論理的に_______。","options":["話す","話している","話すべきだ","話していた"],"correct_option_id":2,"explanation":"『話すべきだ』 means 'should speak'. It expresses obligation to speak logically."}
+{"question":"[N5] Which word means 'rice' in Japanese?","options":["みず","ごはん","たまご","にく"],"correct_option_id":1,"explanation":"『ごはん』 means 'rice' or 'meal'."}
+{"question":"[N4] 明日は雨が降る_______、傘を持って行きましょう。","options":["ので","から","ため","けれど"],"correct_option_id":0,"explanation":"『ので』 means 'because'. It’s going to rain, so take an umbrella."}
+{"question":"[N3] このレストランは値段が高い_______、サービスが良い。","options":["けれども","けど","が","のに"],"correct_option_id":2,"explanation":"『が』 is used to politely express contrast."}
+{"question":"[N2] 彼は日本語が上手_______、まだ間違うこともある。","options":["だけど","のに","ながら","けれど"],"correct_option_id":3,"explanation":"『けれど』 means 'although'. Although he is good at Japanese, he still makes mistakes."}
+{"question":"[N1] この問題は難しい_______、挑戦する価値がある。","options":["が","けれど","のに","とはいえ"],"correct_option_id":3,"explanation":"『とはいえ』 means 'although'. Although difficult, it’s worth challenging."}
+{"question":"[N5] What does '朝ごはん' mean?","options":["Lunch","Dinner","Breakfast","Snack"],"correct_option_id":2,"explanation":"『朝ごはん』 means 'breakfast' and is pronounced 'あさごはん'."}
+{"question":"[N4] 彼は新しい仕事に慣れるまで、少し_______が必要だ。","options":["時間","気持ち","場所","経験"],"correct_option_id":0,"explanation":"『時間』 means 'time'. He needs some time to get used to the new job."}
+{"question":"[N3] この映画はストーリーが複雑だ_______、映像が美しい。","options":["が","けれど","ので","のに"],"correct_option_id":1,"explanation":"『けれど』 means 'but' or 'although'. The story is complex but the visuals are beautiful."}
+{"question":"[N2] 彼女は努力家で、常に目標に向かって_______いる。","options":["進んで","向かって","努力して","働いて"],"correct_option_id":0,"explanation":"『進んでいる』 means 'moving forward'. She is hardworking and always progressing toward goals."}
+{"question":"[N1] 彼の説明は明確で、誰にでも理解できるように_______。","options":["話した","説明した","工夫されている","教えられている"],"correct_option_id":2,"explanation":"『工夫されている』 means 'well devised or crafted'. His explanation is clear and understandable."}
+{"question":"[N5] Which of these means 'friend' in Japanese?","options":["先生","友達","家族","兄弟"],"correct_option_id":1,"explanation":"『友達』 means 'friend'."}
+{"question":"[N4] 雨が降っているので、外に出るのを_______。","options":["やめた","やめる","やめよう","やめたい"],"correct_option_id":0,"explanation":"『やめた』 means 'stopped'. Decided not to go outside because it’s raining."}
+{"question":"[N3] 彼は仕事が忙しい_______、休みを取った。","options":["けれども","のに","のだから","から"],"correct_option_id":0,"explanation":"『けれども』 means 'although'. Although busy, he took a break."}
+{"question":"[N2] 交通事故を防ぐために、交通ルールを_______ことが大切だ。","options":["守る","破る","無視する","違反する"],"correct_option_id":0,"explanation":"『守る』 means 'to obey or follow'. Important to obey traffic rules to prevent accidents."}
+{"question":"[N1] この問題は複雑だが、冷静に考えれば解決策が_______。","options":["見つかる","見つける","見えてくる","見えない"],"correct_option_id":2,"explanation":"『見えてくる』 means 'become visible' or 'come into view'. A solution appears when thought calmly."}
+{"question":"[N5] What does '学校' mean?","options":["Hospital","Company","School","Library"],"correct_option_id":2,"explanation":"『学校』 means 'school' and is pronounced 'がっこう'."}
+{"question":"[N4] 彼は毎日早く_______。","options":["起きます","寝ます","食べます","勉強します"],"correct_option_id":0,"explanation":"『起きます』 means 'to wake up' or 'get up'."}
+{"question":"[N3] この本は難しい_______、面白い。","options":["けれど","ので","から","が"],"correct_option_id":0,"explanation":"『けれど』 means 'although'. The book is difficult but interesting."}
+{"question":"[N2] 天気が悪い_______、出かけました。","options":["のに","けれども","から","ので"],"correct_option_id":0,"explanation":"『のに』 means 'although'. Despite bad weather, went out."}
+{"question":"[N1] 彼は自分の考えをはっきりと_______。","options":["表現した","述べた","説明した","伝えた"],"correct_option_id":0,"explanation":"『表現した』 means 'expressed'. He clearly expressed his thoughts."}
+{"question":"[N5] How do you say 'thank you' in Japanese?","options":["こんにちは","ありがとう","さようなら","おはよう"],"correct_option_id":1,"explanation":"『ありがとう』 means 'thank you'."}
+{"question":"[N4] 今日は寒いので、コートを_______。","options":["着ます","脱ぎます","洗います","買います"],"correct_option_id":0,"explanation":"『着ます』 means 'to wear'. Because it’s cold, wearing a coat."}
+{"question":"[N3] 彼女は日本語が上手_______、まだ勉強中だ。","options":["けれど","けど","が","のに"],"correct_option_id":3,"explanation":"『のに』 expresses contradiction. Although good at Japanese, still studying."}
+{"question":"[N2] 事故があったため、電車が遅れた_______。","options":["そうだ","らしい","ようだ","ように"],"correct_option_id":0,"explanation":"『そうだ』 indicates hearsay. It is said the train was delayed due to an accident."}
+{"question":"[N1] この計画は実現可能であると_______。","options":["判断された","考えられた","期待された","理解された"],"correct_option_id":0,"explanation":"『判断された』 means 'was judged/decided'. The plan was deemed feasible."}
+{"question":"[N5] What does '友達' mean?","options":["Friend","Teacher","Parent","Student"],"correct_option_id":0,"explanation":"『友達』 means 'friend'. Pronounced 'ともだち'."}
+{"question":"[N4] 彼は毎朝6時に_______。","options":["起きます","寝ます","食べます","勉強します"],"correct_option_id":0,"explanation":"『起きます』 means 'to wake up' or 'to get up'."}
+{"question":"[N3] この映画は面白い_______、少し長いです。","options":["が","けれど","ので","のに"],"correct_option_id":1,"explanation":"『けれど』 means 'but' or 'although'. The movie is interesting but a little long."}
+{"question":"[N2] 彼は忙しい_______、手伝ってくれた。","options":["のに","けれども","から","ので"],"correct_option_id":0,"explanation":"『のに』 means 'although'. Although busy, he helped."}
+{"question":"[N1] この議論は非常に_______で、結論が難しい。","options":["複雑","簡単","明確","単純"],"correct_option_id":0,"explanation":"『複雑』 means 'complex'. The discussion is very complex."}
+{"question":"[N5] How do you say 'goodbye' in Japanese?","options":["こんにちは","ありがとう","さようなら","おはよう"],"correct_option_id":2,"explanation":"'さようなら' means 'goodbye'."}
+{"question":"[N4] 今日は雨が降っているので、傘を_______。","options":["持って行きます","持って来ます","持って帰ります","持って帰ります"],"correct_option_id":0,"explanation":"『持って行きます』 means 'take (an umbrella) with you'."}
+{"question":"[N3] 日本語を勉強している_______、まだ話せません。","options":["のに","けれど","から","ので"],"correct_option_id":0,"explanation":"『のに』 expresses contradiction. Although studying Japanese, still can’t speak well."}
+{"question":"[N2] 彼は約束を守らなかった_______、謝らなかった。","options":["のに","けれども","から","ので"],"correct_option_id":0,"explanation":"『のに』 means 'although'. He broke the promise but didn’t apologize."}
+{"question":"[N1] その計画は現実的ではなく、実行するのは_______。","options":["困難だ","簡単だ","可能だ","安全だ"],"correct_option_id":0,"explanation":"『困難だ』 means 'difficult'. The plan is unrealistic and difficult to implement."}
+{"question":"[N5] What does the kanji '日' mean?","options":["Moon","Sun","Star","Sky"],"correct_option_id":1,"explanation":"『日』 means 'sun' or 'day', pronounced 'にち' or 'ひ'."}
+{"question":"[N4] 彼女は毎日学校へ_______。","options":["行きます","来ます","帰ります","座ります"],"correct_option_id":0,"explanation":"『行きます』 means 'to go'. She goes to school every day."}
+{"question":"[N3] この問題は簡単_______、時間がかかる。","options":["けれど","ので","から","が"],"correct_option_id":0,"explanation":"『けれど』 means 'although'. The problem is easy but takes time."}
+{"question":"[N2] 彼は試験に合格した_______、まだ安心できない。","options":["が","けれども","のに","とはいえ"],"correct_option_id":3,"explanation":"『とはいえ』 means 'although'. Although he passed, he can't be completely relaxed."}
+{"question":"[N1] 彼の意見は論理的で、説得力に_______。","options":["富んでいる","欠けている","足りている","優れている"],"correct_option_id":0,"explanation":"『説得力に富む』 means 'to be full of persuasiveness'."}
+{"question":"[N5] How do you say 'water' in Japanese?","options":["火","水","木","土"],"correct_option_id":1,"explanation":"『水』 means 'water' and is pronounced 'みず'."}
+{"question":"[N4] 昨日は雨が降った_______、今日は晴れています。","options":["けれど","ので","から","のに"],"correct_option_id":0,"explanation":"『けれど』 means 'but'. It rained yesterday, but it is sunny today."}
+{"question":"[N3] 彼女は忙しい_______、会いに来てくれた。","options":["けれども","のに","ながら","から"],"correct_option_id":1,"explanation":"『のに』 means 'although'. Although busy, she came to see me."}
+{"question":"[N2] 新しいルールは分かりにくい_______、守らなければならない。","options":["けれども","が","のに","から"],"correct_option_id":0,"explanation":"『けれども』 means 'although'. Although the new rules are difficult to understand, they must be followed."}
+{"question":"[N1] 彼の説明は複雑で、理解するのが_______。","options":["難しい","簡単な","早い","遅い"],"correct_option_id":0,"explanation":"『難しい』 means 'difficult'. His explanation is complex and hard to understand."}
+{"question":"[N5] What does '猫' mean?","options":["Dog","Cat","Bird","Fish"],"correct_option_id":1,"explanation":"『猫』 means 'cat' and is pronounced 'ねこ'."}
+{"question":"[N4] 明日はテストがあるので、今日は早く_______。","options":["寝ます","起きます","食べます","勉強します"],"correct_option_id":0,"explanation":"『寝ます』 means 'to sleep'. Because of tomorrow’s test, going to sleep early today."}
+{"question":"[N3] 彼は忙しい_______、時間を作って手伝ってくれた。","options":["けれども","のに","のだから","から"],"correct_option_id":1,"explanation":"『のに』 means 'although'. Although busy, he made time to help."}
+{"question":"[N2] 日本の文化に興味がある_______、もっと勉強したい。","options":["から","ので","けれども","ため"],"correct_option_id":0,"explanation":"『から』 means 'because'. Because I’m interested in Japanese culture, I want to study more."}
+{"question":"[N1] この小説は内容が深く、読む人に_______を与える。","options":["感動","失望","混乱","不満"],"correct_option_id":0,"explanation":"『感動』 means 'impression' or 'deep emotion'. The novel gives readers a strong impression."}
+{"question":"[N5] How do you say 'thank you very much' in Japanese?","options":["どういたしまして","ありがとう","ありがとうございます","すみません"],"correct_option_id":2,"explanation":"『ありがとうございます』 is a polite way to say 'thank you very much'."}
+{"question":"[N4] 駅まで歩いて_______、電車に乗りました。","options":["行って","来て","帰って","走って"],"correct_option_id":0,"explanation":"『行って』 means 'go'. Walked to the station and took the train."}
+{"question":"[N3] 彼は試験に合格した_______、喜んでいなかった。","options":["のに","けれど","から","ので"],"correct_option_id":0,"explanation":"『のに』 means 'although'. Although he passed, he was not happy."}
+{"question":"[N2] 雨が降る_______、傘を持って行った方がいい。","options":["ので","から","ため","けれど"],"correct_option_id":0,"explanation":"『ので』 means 'because'. Because it will rain, better to take an umbrella."}
+{"question":"[N1] 彼の意見は理論的で、説得力に_______。","options":["富んでいる","欠けている","足りている","優れている"],"correct_option_id":0,"explanation":"『説得力に富む』 means 'to be full of persuasiveness'."}
+{"question":"[N5] What does the word '山' mean?","options":["River","Mountain","Forest","Lake"],"correct_option_id":1,"explanation":"『山』 means 'mountain' and is pronounced 'やま'."}
+{"question":"[N4] 明日は休みなので、ゆっくり_______。","options":["休みます","起きます","働きます","勉強します"],"correct_option_id":0,"explanation":"『休みます』 means 'to rest'. Tomorrow is a holiday, so will rest."}
+{"question":"[N3] 彼は風邪をひいた_______、学校に行った。","options":["のに","けれども","から","ので"],"correct_option_id":0,"explanation":"『のに』 means 'although'. Although he caught a cold, he went to school."}
+{"question":"[N2] 日本語の勉強は難しい_______、毎日頑張っています。","options":["けれども","ので","から","のに"],"correct_option_id":0,"explanation":"『けれども』 means 'although'. Although Japanese study is difficult, he tries every day."}
+{"question":"[N1] 彼の説明は詳細で、理解しやすく_______。","options":["書かれている","話されている","工夫されている","作られている"],"correct_option_id":2,"explanation":"『工夫されている』 means 'well designed or devised'. His explanation is detailed and easy to understand."}
+{"question":"[N5] How do you say 'good morning' in Japanese?","options":["こんばんは","おはよう","こんにちは","さようなら"],"correct_option_id":1,"explanation":"『おはよう』 means 'good morning'."}
+{"question":"[N4] 昨日は友達と映画を_______。","options":["見ました","聞きました","話しました","食べました"],"correct_option_id":0,"explanation":"『見ました』 means 'watched'. Yesterday, watched a movie with friends."}
+{"question":"[N3] この問題は簡単そう_______、実は難しい。","options":["だが","けど","けれど","が"],"correct_option_id":3,"explanation":"『が』 is used to contrast politely. Although it looks easy, it is actually hard."}
+{"question":"[N2] 彼は新しい仕事に慣れるのに時間が_______。","options":["かかる","かける","なる","する"],"correct_option_id":0,"explanation":"『かかる』 means 'to take (time)'. It takes time to get used to the new job."}
+{"question":"[N1] 彼の考え方は非常に論理的で、説得力に_______。","options":["富んでいる","欠けている","足りている","優れている"],"correct_option_id":0,"explanation":"『説得力に富む』 means 'full of persuasiveness'."}
+{"question":"[N5] What does the kanji '川' mean?","options":["Mountain","River","Forest","Ocean"],"correct_option_id":1,"explanation":"『川』 means 'river' and is pronounced 'かわ'."}
+{"question":"[N4] 毎朝ジョギングをしているので、体が_______。","options":["弱い","強い","疲れた","軽い"],"correct_option_id":1,"explanation":"『強い』 means 'strong'. Jogging daily makes the body strong."}
+{"question":"[N3] 彼女は忙しい_______、時間を作って会いに来てくれた。","options":["けれども","のに","ながら","から"],"correct_option_id":1,"explanation":"『のに』 means 'although'. Although busy, she made time to visit."}
+{"question":"[N2] 新しいルールは難しい_______、守らなければならない。","options":["けれども","が","のに","から"],"correct_option_id":0,"explanation":"『けれども』 means 'although'. Although the new rules are difficult to understand, they must be followed."}
+{"question":"[N1] 彼の説明は論理的で、説得力に_______。","options":["富んでいる","欠けている","足りている","優れている"],"correct_option_id":0,"explanation":"『説得力に富む』 means 'to be full of persuasiveness'."}
+{"question":"[N5] How do you say 'bird' in Japanese?","options":["ねこ","いぬ","とり","うま"],"correct_option_id":2,"explanation":"『とり』 means 'bird'."}
+{"question":"[N4] 明日は雨が降る_______、傘を持って行きましょう。","options":["ので","から","ため","けれど"],"correct_option_id":0,"explanation":"『ので』 means 'because'. It's going to rain, so take an umbrella."}
+{"question":"[N3] このレストランは値段が高い_______、サービスが良い。","options":["けれども","けど","が","のに"],"correct_option_id":2,"explanation":"『が』 is used to politely express contrast."}
+{"question":"[N2] 彼は日本語が上手_______、まだ間違うこともある。","options":["だけど","のに","ながら","けれど"],"correct_option_id":3,"explanation":"『けれど』 means 'although'. Although he is good at Japanese, he still makes mistakes."}
+{"question":"[N1] この問題は難しい_______、挑戦する価値がある。","options":["が","けれど","のに","とはいえ"],"correct_option_id":3,"explanation":"『とはいえ』 means 'although'. Although difficult, it's worth the challenge."}
+{"question":"[N5] What does '花' mean?","options":["Tree","Flower","Grass","Leaf"],"correct_option_id":1,"explanation":"『花』 means 'flower' and is pronounced 'はな'."}
+{"question":"[N4] 彼は毎日日本語を_______。","options":["勉強します","話します","書きます","読みます"],"correct_option_id":0,"explanation":"『勉強します』 means 'to study'. He studies Japanese every day."}
+{"question":"[N3] 仕事が忙しい_______、時間を作って会った。","options":["けれども","のに","ながら","から"],"correct_option_id":1,"explanation":"『のに』 means 'although'. Although busy, he made time to meet."}
+{"question":"[N2] この本は難しい_______、内容が面白い。","options":["けれども","ので","から","のに"],"correct_option_id":0,"explanation":"『けれども』 means 'although'. Although difficult, the content is interesting."}
+{"question":"[N1] 彼の考えは論理的で、説得力に_______。","options":["富んでいる","欠けている","足りている","優れている"],"correct_option_id":0,"explanation":"『説得力に富む』 means 'full of persuasiveness'."}
+{"question":"[N5] How do you say 'fish' in Japanese?","options":["さかな","にく","とり","はな"],"correct_option_id":0,"explanation":"『さかな』 means 'fish'."}
+{"question":"[N4] 雨が降っているので、傘を_______。","options":["持って行きます","持って来ます","持って帰ります","買います"],"correct_option_id":0,"explanation":"『持って行きます』 means 'take an umbrella with you'."}
+{"question":"[N3] 日本語は難しい_______、毎日勉強している。","options":["けれども","ので","から","のに"],"correct_option_id":0,"explanation":"『けれども』 means 'although'. Although Japanese is difficult, I study every day."}
+{"question":"[N2] 彼は仕事が忙しい_______、休みを取った。","options":["のに","けれども","から","ので"],"correct_option_id":1,"explanation":"『けれども』 means 'although'. Although busy, he took a day off."}
+{"question":"[N1] この計画は実現可能であると_______。","options":["判断された","考えられた","期待された","理解された"],"correct_option_id":0,"explanation":"『判断された』 means 'was judged or decided'. The plan was deemed feasible."}
+{"question":"[N5] What does '空' mean?","options":["Sky","Water","Earth","Fire"],"correct_option_id":0,"explanation":"『空』 means 'sky' and is pronounced 'そら'."}
+{"question":"[N4] 彼は毎日6時に_______。","options":["起きます","寝ます","食べます","走ります"],"correct_option_id":0,"explanation":"『起きます』 means 'to wake up' or 'get up'."}
+{"question":"[N3] この店は人気がある_______、いつも混んでいる。","options":["けれど","ので","から","が"],"correct_option_id":0,"explanation":"『けれど』 means 'but' or 'although'. The store is popular but always crowded."}
+{"question":"[N2] 彼は疲れていた_______、仕事を続けた。","options":["のに","けれども","から","ので"],"correct_option_id":0,"explanation":"『のに』 means 'although'. Although tired, he continued working."}
+{"question":"[N1] その議論は複雑で、理解するのが_______。","options":["難しい","簡単な","早い","遅い"],"correct_option_id":0,"explanation":"『難しい』 means 'difficult'. The discussion is complex and hard to understand."}
+{"question":"[N5] How do you say 'dog' in Japanese?","options":["ねこ","いぬ","とり","さかな"],"correct_option_id":1,"explanation":"『いぬ』 means 'dog'."}
+{"question":"[N4] 今日の天気は_______。","options":["晴れです","雨です","雪です","風です"],"correct_option_id":0,"explanation":"『晴れ』 means 'sunny'. The weather today is sunny."}
+{"question":"[N3] 日本語を勉強している_______、まだ上手に話せない。","options":["けれども","のに","から","ので"],"correct_option_id":1,"explanation":"『のに』 means 'although'. Although studying Japanese, still can’t speak well."}
+{"question":"[N2] 電車が遅れた_______、会議に遅刻した。","options":["ので","から","ため","けれど"],"correct_option_id":0,"explanation":"『ので』 means 'because'. Because the train was late, I was late for the meeting."}
+{"question":"[N1] 彼の説明は論理的で、説得力に_______。","options":["富んでいる","欠けている","足りている","優れている"],"correct_option_id":0,"explanation":"『説得力に富む』 means 'full of persuasiveness'."}
+{"question":"[N5] What does the kanji '魚' mean?","options":["Fish","Bird","Dog","Cat"],"correct_option_id":0,"explanation":"『魚』 means 'fish' and is pronounced 'さかな'."}
+{"question":"[N4] 私は毎日学校へ_______。","options":["行きます","来ます","帰ります","座ります"],"correct_option_id":0,"explanation":"『行きます』 means 'to go'. I go to school every day."}
+{"question":"[N3] この本は難しい_______、面白い。","options":["けれど","ので","から","が"],"correct_option_id":0,"explanation":"『けれど』 means 'although'. The book is difficult but interesting."}
+{"question":"[N2] 彼は忙しい_______、手伝ってくれた。","options":["のに","けれども","から","ので"],"correct_option_id":0,"explanation":"『のに』 means 'although'. Although busy, he helped."}
+{"question":"[N1] 彼の考えは論理的で、説得力に_______。","options":["富んでいる","欠けている","足りている","優れている"],"correct_option_id":0,"explanation":"『説得力に富む』 means 'full of persuasiveness'."}
+{"question":"[N5] How do you say 'tree' in Japanese?","options":["花","木","草","葉"],"correct_option_id":1,"explanation":"『木』 means 'tree' and is pronounced 'き'."}
+{"question":"[N4] 明日は雨が降る_______、傘を持って行きましょう。","options":["ので","から","ため","けれど"],"correct_option_id":0,"explanation":"『ので』 means 'because'. It's going to rain, so take an umbrella."}
+{"question":"[N3] 彼女は忙しい_______、時間を作ってくれた。","options":["けれども","のに","ながら","から"],"correct_option_id":1,"explanation":"『のに』 means 'although'. Although busy, she made time."}
+{"question":"[N2] 新しいルールは難しい_______、守らなければならない。","options":["けれども","が","のに","から"],"correct_option_id":0,"explanation":"『けれども』 means 'although'. Although the new rules are difficult, they must be followed."}
+{"question":"[N1] その計画は現実的ではなく、実行するのは_______。","options":["困難だ","簡単だ","可能だ","安全だ"],"correct_option_id":0,"explanation":"『困難だ』 means 'difficult'. The plan is unrealistic and difficult to implement."}
+{"question":"[N5] What does the kanji '雨' mean?","options":["Snow","Rain","Wind","Sun"],"correct_option_id":1,"explanation":"『雨』 means 'rain' and is pronounced 'あめ'."}
+{"question":"[N4] 昨日は友達と映画を_______。","options":["見ました","聞きました","話しました","食べました"],"correct_option_id":0,"explanation":"『見ました』 means 'watched'. Yesterday, watched a movie with friends."}
+{"question":"[N3] 彼は疲れていた_______、仕事を続けた。","options":["のに","けれども","から","ので"],"correct_option_id":0,"explanation":"『のに』 means 'although'. Although tired, he continued working."}
+{"question":"[N2] 電車が遅れた_______、会議に遅刻した。","options":["ので","から","ため","けれど"],"correct_option_id":0,"explanation":"『ので』 means 'because'. Because the train was late, I was late for the meeting."}
+{"question":"[N1] 彼の説明は論理的で、説得力に_______。","options":["富んでいる","欠けている","足りている","優れている"],"correct_option_id":0,"explanation":"『説得力に富む』 means 'full of persuasiveness'."}
+{"question":"[N5] How do you say 'book' in Japanese?","options":["本","机","椅子","窓"],"correct_option_id":0,"explanation":"『本』 means 'book' and is pronounced 'ほん'."}
+{"question":"[N4] 彼は毎日ジョギングをしているので、体が_______。","options":["弱い","強い","疲れた","軽い"],"correct_option_id":1,"explanation":"『強い』 means 'strong'. Jogging daily makes the body strong."}
+{"question":"[N3] この問題は簡単そう_______、実は難しい。","options":["だが","けど","けれど","が"],"correct_option_id":3,"explanation":"『が』 is used to contrast politely. Although it looks easy, it is actually hard."}
+{"question":"[N2] 彼は新しい仕事に慣れるのに時間が_______。","options":["かかる","かける","なる","する"],"correct_option_id":0,"explanation":"『かかる』 means 'to take (time)'. It takes time to get used to the new job."}
+{"question":"[N1] 彼の考え方は非常に論理的で、説得力に_______。","options":["富んでいる","欠けている","足りている","優れている"],"correct_option_id":0,"explanation":"『説得力に富む』 means 'full of persuasiveness'."}
+{"question":"[N5] What does the kanji '火' mean?","options":["Water","Fire","Earth","Wind"],"correct_option_id":1,"explanation":"『火』 means 'fire' and is pronounced 'ひ'."}
+{"question":"[N4] 今日はとても寒い_______、コートを着ています。","options":["ので","けれど","から","のに"],"correct_option_id":0,"explanation":"『ので』 means 'because'. Because it’s cold, wearing a coat."}
+{"question":"[N3] 彼は病気だった_______、学校に行った。","options":["けれども","のに","から","ので"],"correct_option_id":1,"explanation":"『のに』 means 'although'. Although sick, he went to school."}
+{"question":"[N2] 新しいプロジェクトは大変_______、成功させたい。","options":["だが","けれども","けど","が"],"correct_option_id":1,"explanation":"『けれども』 means 'although'. Although the new project is difficult, I want it to succeed."}
+{"question":"[N1] 彼の説明は明確で、説得力に_______。","options":["富んでいる","欠けている","足りている","優れている"],"correct_option_id":0,"explanation":"『説得力に富む』 means 'full of persuasiveness'."}
+{"question":"[N5] How do you say 'flower' in Japanese?","options":["花","木","草","葉"],"correct_option_id":0,"explanation":"『花』 means 'flower' and is pronounced 'はな'."}
+{"question":"[N4] 昨日、友達と公園で_______。","options":["遊びました","勉強しました","働きました","休みました"],"correct_option_id":0,"explanation":"『遊びました』 means 'played'. Yesterday, played with friends in the park."}
+{"question":"[N3] この料理は見た目は美しい_______、味は普通だ。","options":["けれど","ので","から","が"],"correct_option_id":3,"explanation":"『が』 is used to express contrast politely. Although it looks beautiful, the taste is ordinary."}
+{"question":"[N2] 彼女は優しい_______、厳しい時もある。","options":["けれども","ので","から","のに"],"correct_option_id":0,"explanation":"『けれども』 means 'although'. She is kind, but sometimes strict."}
+{"question":"[N1] この理論は複雑で、理解するのが_______。","options":["難しい","簡単な","早い","遅い"],"correct_option_id":0,"explanation":"『難しい』 means 'difficult'. This theory is complex and hard to understand."}
+{"question":"[N5] What does the kanji '空' mean?","options":["Sky","Sea","Mountain","River"],"correct_option_id":0,"explanation":"『空』 means 'sky' and is pronounced 'そら'."}
+{"question":"[N4] 明日は雨が降る_______、傘を忘れないでください。","options":["ので","けれど","から","のに"],"correct_option_id":0,"explanation":"『ので』 means 'because'. Because it will rain tomorrow, don’t forget your umbrella."}
+{"question":"[N3] 彼は忙しい_______、約束を守った。","options":["けれども","のに","から","ので"],"correct_option_id":1,"explanation":"『のに』 means 'although'. Although busy, he kept his promise."}
+{"question":"[N2] 日本語は難しい_______、毎日勉強しています。","options":["けれども","ので","から","のに"],"correct_option_id":0,"explanation":"『けれども』 means 'although'. Although Japanese is difficult, I study every day."}
+{"question":"[N1] 彼の話し方は論理的で、説得力に_______。","options":["富んでいる","欠けている","足りている","優れている"],"correct_option_id":0,"explanation":"『説得力に富む』 means 'full of persuasiveness'."}
+{"question":"[N5] How do you say 'water' in Japanese?","options":["火","水","土","風"],"correct_option_id":1,"explanation":"『水』 means 'water' and is pronounced 'みず'."}
+{"question":"[N4] 昨日は友達と映画を_______。","options":["見ました","聞きました","話しました","食べました"],"correct_option_id":0,"explanation":"『見ました』 means 'watched'. Yesterday, watched a movie with friends."}
+{"question":"[N3] この問題は簡単そう_______、実は難しい。","options":["だが","けど","けれど","が"],"correct_option_id":3,"explanation":"『が』 is used to contrast politely. Although it looks easy, it is actually hard."}
+{"question":"[N2] 彼は新しい仕事に慣れるのに時間が_______。","options":["かかる","かける","なる","する"],"correct_option_id":0,"explanation":"『かかる』 means 'to take (time)'. It takes time to get used to the new job."}
+{"question":"[N1] 彼の考え方は非常に論理的で、説得力に_______。","options":["富んでいる","欠けている","足りている","優れている"],"correct_option_id":0,"explanation":"『説得力に富む』 means 'full of persuasiveness'."}
+{"question":"[N5] What does the kanji '木' mean?","options":["Flower","Tree","Grass","Leaf"],"correct_option_id":1,"explanation":"『木』 means 'tree' and is pronounced 'き'."}
+{"question":"[N4] 彼は毎日図書館で_______。","options":["勉強します","話します","遊びます","寝ます"],"correct_option_id":0,"explanation":"『勉強します』 means 'to study'. He studies at the library every day."}
+{"question":"[N3] 彼女は忙しい_______、約束を守った。","options":["けれども","のに","から","ので"],"correct_option_id":1,"explanation":"『のに』 means 'although'. Although busy, she kept her promise."}
+{"question":"[N2] 雨が降った_______、試合は中止になった。","options":["ので","から","ため","けれど"],"correct_option_id":0,"explanation":"『ので』 means 'because'. Because it rained, the game was canceled."}
+{"question":"[N1] この問題は複雑で、理解するのが_______。","options":["難しい","簡単な","早い","遅い"],"correct_option_id":0,"explanation":"『難しい』 means 'difficult'. This problem is complex and hard to understand."}
+{"question":"[N5] How do you say 'cat' in Japanese?","options":["いぬ","ねこ","とり","さかな"],"correct_option_id":1,"explanation":"『ねこ』 means 'cat'."}
+{"question":"[N4] 明日は早く_______。","options":["起きます","寝ます","食べます","飲みます"],"correct_option_id":0,"explanation":"『起きます』 means 'to get up'. Tomorrow, I will get up early."}
+{"question":"[N3] この料理は美味しい_______、少し高い。","options":["けれど","ので","から","が"],"correct_option_id":3,"explanation":"『が』 is used to politely express contrast. The dish is delicious but a bit expensive."}
+{"question":"[N2] 彼は毎日運動する_______、健康を保っている。","options":["ので","から","ため","けれど"],"correct_option_id":0,"explanation":"『ので』 means 'because'. Because he exercises daily, he keeps healthy."}
+{"question":"[N1] 彼の説明は非常に論理的で、説得力に_______。","options":["富んでいる","欠けている","足りている","優れている"],"correct_option_id":0,"explanation":"『説得力に富む』 means 'full of persuasiveness'."}
+{"question":"[N5] What does the kanji '山' mean?","options":["River","Mountain","Forest","Field"],"correct_option_id":1,"explanation":"『山』 means 'mountain' and is pronounced 'やま'."}
+{"question":"[N4] 毎朝6時に_______。","options":["起きます","寝ます","食べます","走ります"],"correct_option_id":0,"explanation":"『起きます』 means 'to wake up'. I wake up at 6 every morning."}
+{"question":"[N3] 彼は忙しい_______、約束を守った。","options":["けれども","のに","から","ので"],"correct_option_id":1,"explanation":"『のに』 means 'although'. Although busy, he kept his promise."}
+{"question":"[N2] 日本語は難しい_______、毎日勉強しています。","options":["けれども","ので","から","のに"],"correct_option_id":0,"explanation":"『けれども』 means 'although'. Although Japanese is difficult, I study every day."}
+{"question":"[N1] 彼の話し方は論理的で、説得力に_______。","options":["富んでいる","欠けている","足りている","優れている"],"correct_option_id":0,"explanation":"『説得力に富む』 means 'full of persuasiveness'."}
+{"question":"[N5] How do you say 'river' in Japanese?","options":["山","川","海","空"],"correct_option_id":1,"explanation":"『川』 means 'river' and is pronounced 'かわ'."}
+{"question":"[N4] 昨日は友達と公園で_______。","options":["遊びました","勉強しました","働きました","休みました"],"correct_option_id":0,"explanation":"『遊びました』 means 'played'. Yesterday, played with friends in the park."}
+{"question":"[N3] この料理は見た目は美しい_______、味は普通だ。","options":["けれど","ので","から","が"],"correct_option_id":3,"explanation":"『が』 is used to express contrast politely. Although it looks beautiful, the taste is ordinary."}
+{"question":"[N2] 彼女は優しい_______、厳しい時もある。","options":["けれども","ので","から","のに"],"correct_option_id":0,"explanation":"『けれども』 means 'although'. She is kind, but sometimes strict."}
+{"question":"[N1] この理論は複雑で、理解するのが_______。","options":["難しい","簡単な","早い","遅い"],"correct_option_id":0,"explanation":"『難しい』 means 'difficult'. This theory is complex and hard to understand."}
+{"question":"[N5] What does the kanji '犬' mean?","options":["Cat","Bird","Dog","Fish"],"correct_option_id":2,"explanation":"『犬』 means 'dog' and is pronounced 'いぬ'."}
+{"question":"[N4] 毎朝7時に_______。","options":["起きます","寝ます","食べます","飲みます"],"correct_option_id":0,"explanation":"『起きます』 means 'to get up'. I get up at 7 every morning."}
+{"question":"[N3] 日本語は難しい_______、毎日勉強しています。","options":["けれども","ので","から","のに"],"correct_option_id":0,"explanation":"『けれども』 means 'although'. Although Japanese is difficult, I study every day."}
+{"question":"[N5] How do you say 'apple' in Japanese?","options":["りんご","みかん","ぶどう","もも"],"correct_option_id":0,"explanation":"『りんご』 means 'apple'."}
+{"question":"[N4] 彼は毎日学校へ_______。","options":["行きます","来ます","帰ります","座ります"],"correct_option_id":0,"explanation":"『行きます』 means 'to go'. He goes to school every day."}
+{"question":"[N3] 彼女は忙しい_______、約束を守った。","options":["けれども","のに","から","ので"],"correct_option_id":1,"explanation":"『のに』 means 'although'. Although busy, she kept her promise."}
+{"question":"[N5] What does '水' mean?","options":["Fire","Water","Tree","Wind"],"correct_option_id":1,"explanation":"『水』 means 'water' and is pronounced 'みず'."}
+{"question":"[N4] 昨日は友達と映画を_______。","options":["見ました","聞きました","話しました","食べました"],"correct_option_id":0,"explanation":"『見ました』 means 'watched'. Yesterday, watched a movie with friends."}
+{"question":"[N3] この問題は簡単そう_______、実は難しい。","options":["だが","けど","けれど","が"],"correct_option_id":3,"explanation":"『が』 is used to contrast politely. Although it looks easy, it is actually hard."}
+{"question":"[N5] How do you say 'bird' in Japanese?","options":["ねこ","いぬ","とり","さかな"],"correct_option_id":2,"explanation":"『とり』 means 'bird'."}
+{"question":"[N5] What does the kanji '魚' mean?","options":["Fish","Dog","Cat","Bird"],"correct_option_id":0,"explanation":"『魚』 means 'fish' and is pronounced 'さかな'."}
+{"question":"[N4] 毎日学校へ_______。","options":["行きます","来ます","帰ります","座ります"],"correct_option_id":0,"explanation":"『行きます』 means 'to go'. Going to school every day."}
+{"question":"[N3] 彼は疲れていた_______、仕事を続けた。","options":["のに","けれども","から","ので"],"correct_option_id":0,"explanation":"『のに』 means 'although'. Although tired, he continued working."}
+{"question":"[N5] How do you say 'car' in Japanese?","options":["でんしゃ","くるま","じてんしゃ","バス"],"correct_option_id":1,"explanation":"『くるま』 means 'car'."}
+{"question":"[N4] 昨日、友達と公園で_______。","options":["遊びました","勉強しました","働きました","休みました"],"correct_option_id":0,"explanation":"『遊びました』 means 'played'. Played with friends in the park yesterday."}
+{"question":"[N3] この本は面白そう_______、まだ読んでいません。","options":["だけど","けれど","けど","が"],"correct_option_id":3,"explanation":"『が』 is a polite contrast. Although it looks interesting, I haven’t read it yet."}
+{"question":"[N5] What does the kanji '花' mean?","options":["Flower","Tree","Grass","Leaf"],"correct_option_id":0,"explanation":"『花』 means 'flower' and is pronounced 'はな'."}
+{"question":"[N4] 毎朝6時に_______。","options":["起きます","寝ます","食べます","飲みます"],"correct_option_id":0,"explanation":"『起きます』 means 'to get up'. I get up at 6 every morning."}
+{"question":"[N3] 彼女は忙しい_______、時間を作ってくれた。","options":["けれども","のに","ながら","から"],"correct_option_id":1,"explanation":"『のに』 means 'although'. Although busy, she made time."}
+{"question":"[N5] How do you say 'school' in Japanese?","options":["がっこう","えき","うち","こうえん"],"correct_option_id":0,"explanation":"『がっこう』 means 'school'."}
+{"question":"[N5] What does the kanji '空' mean?","options":["Sky","Sea","Mountain","River"],"correct_option_id":0,"explanation":"『空』 means 'sky' and is pronounced 'そら'."}
+{"question":"[N4] 彼は毎日図書館で_______。","options":["勉強します","話します","遊びます","寝ます"],"correct_option_id":0,"explanation":"『勉強します』 means 'to study'. He studies at the library every day."}
+{"question":"[N3] 彼女は忙しい_______、約束を守った。","options":["けれども","のに","から","ので"],"correct_option_id":1,"explanation":"『のに』 means 'although'. Although busy, she kept her promise."}
+{"question":"[N5] How do you say 'water' in Japanese?","options":["火","水","土","風"],"correct_option_id":1,"explanation":"『水』 means 'water' and is pronounced 'みず'."}
+{"question":"[N4] 昨日は友達と映画を_______。","options":["見ました","聞きました","話しました","食べました"],"correct_option_id":0,"explanation":"『見ました』 means 'watched'. Yesterday, watched a movie with friends."}
+{"question":"[N3] この問題は簡単そう_______、実は難しい。","options":["だが","けど","けれど","が"],"correct_option_id":3,"explanation":"『が』 is used to contrast politely. Although it looks easy, it is actually hard."}
+{"question":"[N5] What does the kanji '鳥' mean?","options":["Dog","Cat","Bird","Fish"],"correct_option_id":2,"explanation":"『鳥』 means 'bird' and is pronounced 'とり'."}
+{"question":"[N4] 毎日学校へ_______。","options":["行きます","来ます","帰ります","座ります"],"correct_option_id":0,"explanation":"『行きます』 means 'to go'. Going to school every day."}
+{"question":"[N3] 彼は疲れていた_______、仕事を続けた。","options":["のに","けれども","から","ので"],"correct_option_id":0,"explanation":"『のに』 means 'although'. Although tired, he continued working."}
+{"question":"[N5] How do you say 'book' in Japanese?","options":["本","机","椅子","窓"],"correct_option_id":0,"explanation":"『本』 means 'book' and is pronounced 'ほん'."}
+{"question":"[N5] What does the kanji '雨' mean?","options":["Snow","Rain","Wind","Sun"],"correct_option_id":1,"explanation":"『雨』 means 'rain' and is pronounced 'あめ'."}
+{"question":"[N4] 彼は毎朝ジョギングを_______。","options":["します","しますか","しました","しません"],"correct_option_id":0,"explanation":"『します』 means 'do'. He jogs every morning."}
+{"question":"[N3] この部屋は狭い_______、住みやすいです。","options":["けれども","ので","から","のに"],"correct_option_id":0,"explanation":"『けれども』 means 'although'. Although the room is small, it's comfortable to live in."}
+{"question":"[N5] How do you say 'flower' in Japanese?","options":["花","木","草","葉"],"correct_option_id":0,"explanation":"『花』 means 'flower' and is pronounced 'はな'."}
+{"question":"[N4] 明日は学校を_______。","options":["休みます","行きます","来ます","帰ります"],"correct_option_id":0,"explanation":"『休みます』 means 'to rest' or 'take a day off'. I will rest from school tomorrow."}
+{"question":"[N3] 彼女は忙しい_______、電話に出ました。","options":["けれども","のに","から","ので"],"correct_option_id":1,"explanation":"『のに』 means 'although'. Although busy, she answered the phone."}
+{"question":"[N5] What does the kanji '山' mean?","options":["Mountain","River","Forest","Field"],"correct_option_id":0,"explanation":"『山』 means 'mountain' and is pronounced 'やま'."}
+{"question":"[N4] 毎日6時に_______。","options":["起きます","寝ます","食べます","飲みます"],"correct_option_id":0,"explanation":"『起きます』 means 'to get up'. I get up at 6 every morning."}
+{"question":"[N3] この料理は美味しい_______、少し高い。","options":["けれど","ので","から","が"],"correct_option_id":3,"explanation":"『が』 is used to politely express contrast. The dish is delicious but a bit expensive."}
+{"question":"[N5] How do you say 'cat' in Japanese?","options":["いぬ","ねこ","とり","さかな"],"correct_option_id":1,"explanation":"『ねこ』 means 'cat'."}
+{"question":"[N5] What does the kanji '石' mean?","options":["Stone","Water","Tree","Fire"],"correct_option_id":0,"explanation":"『石』 means 'stone' and is pronounced 'いし'."}
+{"question":"[N4] 彼は毎日会社へ_______。","options":["行きます","来ます","帰ります","遊びます"],"correct_option_id":0,"explanation":"『行きます』 means 'to go'. He goes to the company every day."}
+{"question":"[N3] この文は難しい_______、頑張ってください。","options":["けれども","ので","から","のに"],"correct_option_id":0,"explanation":"『けれども』 means 'although'. Although this sentence is difficult, please do your best."}
+{"question":"[N5] How do you say 'tree' in Japanese?","options":["花","木","草","葉"],"correct_option_id":1,"explanation":"『木』 means 'tree' and is pronounced 'き'."}
+{"question":"[N4] 昨日は友達と映画を_______。","options":["見ました","聞きました","話しました","食べました"],"correct_option_id":0,"explanation":"『見ました』 means 'watched'. Yesterday, watched a movie with friends."}
+{"question":"[N3] 彼は疲れていた_______、仕事を続けた。","options":["のに","けれども","から","ので"],"correct_option_id":0,"explanation":"『のに』 means 'although'. Although tired, he continued working."}
+{"question":"[N5] What does the kanji '花' mean?","options":["Flower","Tree","Grass","Leaf"],"correct_option_id":0,"explanation":"『花』 means 'flower' and is pronounced 'はな'."}
+{"question":"[N4] 毎朝6時に_______。","options":["起きます","寝ます","食べます","飲みます"],"correct_option_id":0,"explanation":"『起きます』 means 'to get up'. I get up at 6 every morning."}
+{"question":"[N3] この料理は美味しい_______、少し高い。","options":["けれど","ので","から","が"],"correct_option_id":3,"explanation":"『が』 is used to politely express contrast. The dish is delicious but a bit expensive."}
+{"question":"[N5] How do you say 'cat' in Japanese?","options":["いぬ","ねこ","とり","さかな"],"correct_option_id":1,"explanation":"『ねこ』 means 'cat'."}
+{"question":"[N5] What does the kanji '川' mean?","options":["Mountain","River","Sea","Lake"],"correct_option_id":1,"explanation":"『川』 means 'river' and is pronounced 'かわ'."}
+{"question":"[N4] 彼は毎朝6時に_______。","options":["起きます","寝ます","食べます","飲みます"],"correct_option_id":0,"explanation":"『起きます』 means 'to get up'. He gets up at 6 every morning."}
+{"question":"[N3] この本は面白そう_______、まだ読んでいません。","options":["けれど","ので","が","けど"],"correct_option_id":2,"explanation":"『が』 is a polite contrast. Although it looks interesting, I haven’t read it yet."}
+{"question":"[N5] How do you say 'bird' in Japanese?","options":["いぬ","ねこ","とり","さかな"],"correct_option_id":2,"explanation":"『とり』 means 'bird'."}
+{"question":"[N4] 昨日は友達と公園で_______。","options":["遊びました","勉強しました","働きました","休みました"],"correct_option_id":0,"explanation":"『遊びました』 means 'played'. Played with friends in the park yesterday."}
+{"question":"[N3] 彼女は忙しい_______、時間を作ってくれた。","options":["のに","けれども","ながら","から"],"correct_option_id":0,"explanation":"『のに』 means 'although'. Although busy, she made time."}
+{"question":"[N5] What does the kanji '火' mean?","options":["Fire","Water","Wind","Earth"],"correct_option_id":0,"explanation":"『火』 means 'fire' and is pronounced 'ひ'."}
+{"question":"[N4] 毎日学校へ_______。","options":["行きます","来ます","帰ります","座ります"],"correct_option_id":0,"explanation":"『行きます』 means 'to go'. Going to school every day."}
+{"question":"[N3] 彼は疲れていた_______、仕事を続けた。","options":["のに","けれども","から","ので"],"correct_option_id":0,"explanation":"『のに』 means 'although'. Although tired, he continued working."}
+{"question":"[N5] How do you say 'book' in Japanese?","options":["本","机","椅子","窓"],"correct_option_id":0,"explanation":"『本』 means 'book' and is pronounced 'ほん'."}
+{"question":"[N5] What does the kanji '雨' mean?","options":["Snow","Rain","Wind","Sun"],"correct_option_id":1,"explanation":"『雨』 means 'rain' and is pronounced 'あめ'."}
+{"question":"[N4] 彼は毎朝ジョギングを_______。","options":["します","しました","しません","する"],"correct_option_id":0,"explanation":"『します』 means 'do'. He jogs every morning."}
+{"question":"[N3] この部屋は狭い_______、住みやすいです。","options":["けれども","ので","から","のに"],"correct_option_id":0,"explanation":"『けれども』 means 'although'. Although the room is small, it's comfortable to live in."}
+{"question":"[N5] How do you say 'flower' in Japanese?","options":["花","木","草","葉"],"correct_option_id":0,"explanation":"『花』 means 'flower' and is pronounced 'はな'."}
+{"question":"[N4] 明日は学校を_______。","options":["休みます","行きます","来ます","帰ります"],"correct_option_id":0,"explanation":"『休みます』 means 'to rest' or 'take a day off'. I will rest from school tomorrow."}
+{"question":"[N3] 彼女は忙しい_______、電話に出ました。","options":["けれども","のに","から","ので"],"correct_option_id":1,"explanation":"『のに』 means 'although'. Although busy, she answered the phone."}
+{"question":"[N5] What does the kanji '山' mean?","options":["Mountain","River","Forest","Field"],"correct_option_id":0,"explanation":"『山』 means 'mountain' and is pronounced 'やま'."}
+{"question":"[N4] 毎日6時に_______。","options":["起きます","寝ます","食べます","飲みます"],"correct_option_id":0,"explanation":"『起きます』 means 'to get up'. I get up at 6 every morning."}
+{"question":"[N3] この料理は美味しい_______、少し高い。","options":["けれど","ので","から","が"],"correct_option_id":3,"explanation":"『が』 is used to politely express contrast. The dish is delicious but a bit expensive."}
+{"question":"[N5] How do you say 'cat' in Japanese?","options":["いぬ","ねこ","とり","さかな"],"correct_option_id":1,"explanation":"『ねこ』 means 'cat'."}
+{"question":"[N5] What does the kanji '月' mean?","options":["Sun","Moon","Star","Cloud"],"correct_option_id":1,"explanation":"『月』 means 'moon' and is pronounced 'つき'."}
+{"question":"[N4] 彼は毎日新聞を_______。","options":["読みます","書きます","話します","聞きます"],"correct_option_id":0,"explanation":"『読みます』 means 'to read'. He reads the newspaper every day."}
+{"question":"[N3] 雨が降っている_______、傘を持って行きなさい。","options":["ので","から","けれども","のに"],"correct_option_id":0,"explanation":"『ので』 means 'because'. Because it is raining, take an umbrella."}
+{"question":"[N5] How do you say 'fish' in Japanese?","options":["さかな","にく","やさい","くだもの"],"correct_option_id":0,"explanation":"『さかな』 means 'fish'."}
+{"question":"[N4] 昨日、友達とカフェで_______。","options":["話しました","食べました","遊びました","寝ました"],"correct_option_id":0,"explanation":"『話しました』 means 'talked'. Yesterday, talked with friends at the cafe."}
+{"question":"[N3] 彼女は忙しい_______、来てくれました。","options":["けれども","のに","から","ので"],"correct_option_id":1,"explanation":"『のに』 means 'although'. Although busy, she came."}
+{"question":"[N5] What does the kanji '火' mean?","options":["Fire","Water","Wind","Earth"],"correct_option_id":0,"explanation":"『火』 means 'fire' and is pronounced 'ひ'."}
+{"question":"[N4] 毎朝6時に_______。","options":["起きます","寝ます","食べます","飲みます"],"correct_option_id":0,"explanation":"『起きます』 means 'to get up'. I get up at 6 every morning."}
+{"question":"[N3] この本は面白そう_______、まだ読んでいません。","options":["けれど","ので","が","けど"],"correct_option_id":2,"explanation":"『が』 is a polite contrast. Although it looks interesting, I haven’t read it yet."}
+{"question":"[N5] How do you say 'bird' in Japanese?","options":["いぬ","ねこ","とり","さかな"],"correct_option_id":2,"explanation":"『とり』 means 'bird'."}
+{"question": "[N4] Which option best completes the sentence: 田中さんはピアノを_______ことができますか。", "options": ["ひく", "およぐ", "はしる", "つくる"], "correct_option_id": 0, "explanation": "「ひく」は「to play (an instrument)」という意味です。「田中さんはピアノをひくことができますか。」は「Can Mr. Tanaka play the piano?」になります。"}
+{"question": "[N3] 彼は忙しいと言っていた_______、パーティーに来てくれた。", "options": ["のに", "から", "ので", "けど"], "correct_option_id": 0, "explanation": "『のに』 is used to show something unexpected. He said he was busy, but he came to the party unexpectedly (思ったより来たので、のにを使う）。"}
+{"question": "[N3] この機械を使う時は、必ずスイッチを_______ください。", "options": ["入れて", "入れた", "入れる", "入れます"], "correct_option_id": 0, "explanation": "『入れてください』 is a polite request form. When using this machine, please turn on the switch.『入れて』 means 'turn on' in て-form with ください."}
+{"question": "[N4] Please choose the best word to complete the sentence: 毎日、朝ごはんを_______。", "options": ["食べます", "ききます", "歩きます", "書きます"], "correct_option_id": 0, "explanation": "『食べます』 means 'eat'. 毎日、朝ごはんを食べます is 'I eat breakfast every day.' 食べる is appropriate for food."}
+{"question": "[N4] Which word best completes the sentence: きょうは天気がとても_______です。", "options": ["きれい", "うるさい", "あぶない", "はやい"], "correct_option_id": 0, "explanation": "『きれい』 means 'beautiful.' 天気がきれい = The weather is beautiful today."}
