@@ -1,7 +1,7 @@
 import os
 from dotenv import load_dotenv
-from telegram import Update
-from telegram.ext import (ApplicationBuilder, CommandHandler,ContextTypes, JobQueue)
+from telegram import Update, InlineKeyboardMarkup, InlineKeyboardButton
+from telegram.ext import (ApplicationBuilder, CommandHandler,ContextTypes, JobQueue, CallbackQueryHandler)
 import json
 from openai import OpenAI
 from pathlib import Path
@@ -26,7 +26,7 @@ schedule = [
 ]
 
 QUIZ_PROMPT = """
-Generate a random JLPT multiple choice question from levels N5 to N3 as a JSON.
+Generate a random JLPT multiple choice question from levels N5 to N1 as a JSON.
  - Be as didactive as possible.
  - Use old JLPT tests available in your database.
  - Use english on N5 and N4 questions.
@@ -57,7 +57,9 @@ The user submitted the following JLPT-style quiz question:
 {question}
 
 Provide a more detailed explanation of the correct answer.
-Use Japanese and English, and include grammar, usage, and nuance.
+Explain it using English, and include grammar, usage, and nuance.
+Don't ask follow up questions, and the introduction message (Ex. "Certainly! Here's a detailed explanation for the JLPT N4 quiz question:") is already embedded so it's not needed.
+Please deliver the response in plain text without any Markdown or formatting. Provide the output as raw text.
 """
 
 
@@ -88,22 +90,30 @@ def append_quiz_to_cache(quiz: dict):
         with QUIZ_CACHE_FILE.open("a", encoding="utf-8") as f:
             f.write(json.dumps(quiz, ensure_ascii=False) + "\n")
         print("Quiz appended to cache.")
+        with open(QUIZ_CACHE_FILE, "r", encoding="utf-8") as f:
+            lines = f.readlines()
+            line_index = len(lines) - 1
+            return line_index
     except Exception as e:
         print("Failed to cache quiz:", e)
 
-def load_random_cached_quiz() -> dict | None:
+def load_random_cached_quiz() -> tuple[dict, int] | None:
     try:
         if not QUIZ_CACHE_FILE.exists():
             print("No quiz cache found.")
             return None
 
         with QUIZ_CACHE_FILE.open("r", encoding="utf-8") as f:
-            quizzes = [json.loads(line) for line in f if line.strip()]
+            lines = [line.strip() for line in f if line.strip()]
 
-        if not quizzes:
+        if not lines:
+            print("Quiz cache found, but empty.")
             return None
 
-        return random.choice(quizzes)
+        index = random.randrange(len(lines))
+        quiz = json.loads(lines[index])
+        return quiz, index
+
     except Exception as e:
         print("Error loading cached quiz:", e)
         return None
@@ -169,7 +179,7 @@ async def stop(update: Update, context: ContextTypes.DEFAULT_TYPE):
     print("Job removed for CHAT:", chat_id)
     await update.message.reply_text("Sensei has been stopped for this group.")
 
-def generate_quiz():
+def generate_quiz(level = None):
     print('Generating quiz...')
 
     try:
@@ -196,6 +206,9 @@ def generate_quiz():
 
         # Finally, append the actual prompt requesting a new quiz
         messages.append({"role": "user", "content": QUIZ_PROMPT})
+        if(level):
+            messages.append({"role": "user", "content": f"Generate a JLPT {level} level quiz this time."})
+        
         response = client.chat.completions.create(
             model=AI_MODEL,
             messages=messages,
@@ -217,8 +230,9 @@ def generate_quiz():
             content = content.strip("`").strip("json").strip()
 
         quiz = json.loads(content)
-        append_quiz_to_cache(quiz)
-        return quiz
+        line_index = append_quiz_to_cache(quiz)
+
+        return quiz, line_index
 
     except Exception as e:
         print("Error generating quiz:", e)
@@ -226,7 +240,15 @@ def generate_quiz():
         return load_random_cached_quiz()
 
 async def send_quiz(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    quiz = generate_quiz()
+    chat_id = update.effective_chat.id
+
+    level = None
+    if context.args:
+        level_candidate = context.args[0].upper()
+        if level_candidate in ["N1", "N2", "N3", "N4", "N5"]:
+            level = level_candidate
+
+    quiz, line_index = generate_quiz(level=level)
 
     if quiz is None:
         await update.message.reply_text("Sorry, I couldn't generate a quiz right now.")
@@ -239,6 +261,14 @@ async def send_quiz(update: Update, context: ContextTypes.DEFAULT_TYPE):
         correct_option_id=quiz["correct_option_id"],
         is_anonymous=True,
         explanation=quiz["explanation"]
+    )
+    keyboard = InlineKeyboardMarkup([
+        [InlineKeyboardButton("Explain-me", callback_data=f"explain|{line_index}")]
+    ])
+    await context.bot.send_message(
+        chat_id=chat_id,
+        text="まぁTap here if you want me to explain the quiz ദ്ദി(˵ •̀ ᴗ - ˵ ) ✧",
+        reply_markup=keyboard
     )
 
 async def send_group_quiz(context: ContextTypes.DEFAULT_TYPE):
@@ -260,15 +290,23 @@ async def explain(update: Update, context: ContextTypes.DEFAULT_TYPE):
     print("Generating explanation")
     # Check if the message is a reply
     if not update.message.reply_to_message or not update.message.reply_to_message.poll:
-        await update.message.reply_text("Please reply to a quiz message with /explain.")
+        await update.message.reply_text("クイズのメッセージに /explain って返事してね.")
         return
 
+    poll_message = update.message.reply_to_message
     poll = update.message.reply_to_message.poll
     question = poll.question.strip()
 
     prompt = EXPLAIN_PROMPT.format(question=question)
 
     try:
+        try:
+            await context.bot.send_message(
+                chat_id=update.effective_chat.id,
+                text=f"ちょっと待ってくださいね~🌸"
+            )
+        except Exception as e:
+            print("Error replying to user", e)
         response = client.chat.completions.create(
             model=AI_MODEL,
             messages=[{"role": "user", "content": prompt}],
@@ -288,12 +326,80 @@ async def explain(update: Update, context: ContextTypes.DEFAULT_TYPE):
         if content.startswith("```"):
             content = content.strip("`").strip("json").strip()
 
-        await update.message.reply_text(f"📘 Explanation:\n{content}")
+        await poll_message.reply_text(f"えっと。。\n{content}")
 
     except Exception as e:
         print("Error generating explanation:", e)
-        await update.message.reply_text("Sorry, I couldn't fetch an explanation right now.")
+        await update.message.reply_text("ごめんね、今は解説を出せなかったみたい。")
 
+async def handle_explain_button(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    query = update.callback_query
+    await query.answer()
+
+    data = query.data
+    if not data.startswith("explain|"):
+        return
+
+    try:
+        quiz_index = int(data.split("|", 1)[1])
+    except ValueError:
+        print("Invalid quiz index in callback_data")
+        await query.message.reply_text("クイズが見つからなかったみたい。")
+        return
+
+    # Read the quiz from the cached JSONL file
+    try:
+        with open(QUIZ_CACHE_FILE, "r", encoding="utf-8") as f:
+            lines = f.readlines()
+
+        quiz_json = lines[quiz_index]
+        quiz = json.loads(quiz_json)
+    except (IndexError, FileNotFoundError, json.JSONDecodeError) as e:
+        print("Error reading quiz from cache:", e)
+        await query.message.reply_text("クイズが見つからなかったみたい。")
+        return
+
+    question = quiz["question"]
+    prompt = EXPLAIN_PROMPT.format(question=question)
+
+    try:
+        await context.bot.send_message(
+            chat_id=update.effective_chat.id,
+            text="ちょっと待ってくださいね~🌸"
+        )
+    except Exception as e:
+        print("Error sending wait message:", e)
+
+    try:
+        # Ask the LLM for an explanation
+        response = client.chat.completions.create(
+            model=AI_MODEL,
+            messages=[{"role": "user", "content": prompt}],
+            stream=False
+        )
+
+        content = response.choices[0].message.content.strip()
+        if content.startswith("```"):
+            content = content.strip("`").strip("json").strip()
+
+        zj_usage = response.usage.zj_usage
+        print('=================================')
+        print('Multiplier:', zj_usage['multiplier'])
+        print('Prompt Cost:', zj_usage['prompt_cost'])
+        print('Completion Cost:', zj_usage['completion_cost'])
+        print('Total Cost:', zj_usage['total_cost'])
+        print('CREDITS REMAINING:', zj_usage['credits_remaining'])
+        print('=================================')
+
+        # Reply with the explanation
+        await query.message.reply_text(f"えっと。。。\n{content}")
+
+    except Exception as e:
+        print("Error generating explanation:", e)
+        await context.bot.send_message(
+            chat_id=update.effective_chat.id,
+            text="ごめんね、今は解説を出せなかったみたい。"
+        )
 if __name__ == '__main__':
     app = ApplicationBuilder().token(TELEGRAM_BOT_TOKEN).build()
 
@@ -301,6 +407,7 @@ if __name__ == '__main__':
     app.add_handler(CommandHandler("explain", explain))
     app.add_handler(CommandHandler("sensei_start", start))
     app.add_handler(CommandHandler("sensei_stop", stop))
+    app.add_handler(CallbackQueryHandler(handle_explain_button))
 
     # Re-add jobs on restart
     print(active_chats)
