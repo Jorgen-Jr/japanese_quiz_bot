@@ -21,7 +21,9 @@ QUIZ_CACHE_FILE = Path(os.getenv("QUIZ_CACHE_FILE"))
 
 schedule = [
     ("morning", time(hour=9-3, minute=0)),
+    ("morning_2", time(hour=11-3, minute=0)),
     ("afternoon", time(hour=17-3, minute=0)),
+    ("afternoon_2", time(hour=19-3, minute=0)),
     ("evening", time(hour=21-3, minute=0))
 ]
 
@@ -274,17 +276,28 @@ async def send_quiz(update: Update, context: ContextTypes.DEFAULT_TYPE):
 async def send_group_quiz(context: ContextTypes.DEFAULT_TYPE):
     print(f"[SEND_QUIZ] Sending quiz to chat {context.job.chat_id}")
     chat_id = context.job.chat_id
-    quiz = generate_quiz()
-    if quiz:
-        await context.bot.send_poll(
-            chat_id=chat_id,
-            question=quiz["question"],
-            options=quiz["options"],
-            type='quiz',
-            correct_option_id=quiz["correct_option_id"],
-            is_anonymous=True,
-            explanation=quiz["explanation"]
-        )
+    quiz, line_index = generate_quiz()
+
+    if quiz is None:
+        await update.message.reply_text("Sorry, I couldn't generate a quiz right now.")
+        return
+
+    message = await update.message.reply_poll(
+        question=quiz["question"],
+        options=quiz["options"],
+        type='quiz',
+        correct_option_id=quiz["correct_option_id"],
+        is_anonymous=True,
+        explanation=quiz["explanation"]
+    )
+    keyboard = InlineKeyboardMarkup([
+        [InlineKeyboardButton("Explain-me", callback_data=f"explain|{line_index}")]
+    ])
+    await context.bot.send_message(
+        chat_id=chat_id,
+        text="まぁTap here if you want me to explain the quiz ദ്ദി(˵ •̀ ᴗ - ˵ ) ✧",
+        reply_markup=keyboard
+    )
 
 async def explain(update: Update, context: ContextTypes.DEFAULT_TYPE):
     print("Generating explanation")

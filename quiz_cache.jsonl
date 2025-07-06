@@ -401,3 +401,5 @@
 {"question": "[N3] 彼がテストに合格したのは、毎日_______勉強したからだ。", "options": ["ちゃんと", "すぐに", "たまに", "ゆっくり"], "correct_option_id": 0, "explanation": "『ちゃんと勉強した』 means 'studied properly'. He passed because he studied well every day."}
 {"question": "[N4] Which word means 'library' in Japanese?", "options": ["病院", "図書館", "郵便局", "銀行"], "correct_option_id": 1, "explanation": "『図書館』 means 'library', where you can read and borrow books. The pronunciation is 'としょかん'."}
 {"question": "[N5] Which word means 'school' in Japanese?", "options": ["病院", "会社", "学校", "郵便局"], "correct_option_id": 2, "explanation": "『学校』 means 'school' and is pronounced 'がっこう'."}
+{"question": "[N3] 彼は疲れている_______、仕事を最後まで終わらせた。", "options": ["のに", "ので", "から", "でも"], "correct_option_id": 0, "explanation": "『のに』 expresses contradiction: Even though he was tired, he finished work. 疲れているのに、やり遂げた。"}
+{"question": "[N4] 彼は毎朝６時に_______をします。", "options": ["運動", "電話", "買い物", "料理"], "correct_option_id": 0, "explanation": "『運動』 means 'exercise'. Every morning at 6 o'clock, he exercises. 運動(うんどう)＝exercise."}
