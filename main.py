@@ -22,6 +22,7 @@ QUIZ_CACHE_FILE = Path(os.getenv("QUIZ_CACHE_FILE"))
 schedule = [
     ("morning", time(hour=9-3, minute=0)),
     ("morning_2", time(hour=11-3, minute=0)),
+    ("high_noon", time(hour=12-3, minute=0)),
     ("afternoon", time(hour=17-3, minute=0)),
     ("afternoon_2", time(hour=19-3, minute=0)),
     ("evening", time(hour=21-3, minute=0))
@@ -206,7 +207,6 @@ def generate_quiz(level = None):
                 "content": f"Previously asked questions:\n{previous_qs_text}"
             })
 
-        # Finally, append the actual prompt requesting a new quiz
         messages.append({"role": "user", "content": QUIZ_PROMPT})
         if(level):
             messages.append({"role": "user", "content": f"Generate a JLPT {level} level quiz this time."})
@@ -227,7 +227,7 @@ def generate_quiz(level = None):
         print('Total Cost:', zj_usage['total_cost'])
         print('CREDITS REMAINING:', zj_usage['credits_remaining'])
         print('=================================')
-        # Optional: fix LLM wrapping output in code blocks
+
         if content.startswith("```"):
             content = content.strip("`").strip("json").strip()
 
@@ -279,10 +279,11 @@ async def send_group_quiz(context: ContextTypes.DEFAULT_TYPE):
     quiz, line_index = generate_quiz()
 
     if quiz is None:
-        await update.message.reply_text("Sorry, I couldn't generate a quiz right now.")
+        await context.bot.send_message("Sorry, I couldn't generate a quiz right now.")
         return
 
-    message = await update.message.reply_poll(
+    message = await context.bot.send_poll(
+        chat_id=chat_id,
         question=quiz["question"],
         options=quiz["options"],
         type='quiz',
