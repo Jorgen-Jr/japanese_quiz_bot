@@ -1,4 +1,5 @@
 import os
+import sys
 from dotenv import load_dotenv
 from telegram import Update, InlineKeyboardMarkup, InlineKeyboardButton
 from telegram.ext import (ApplicationBuilder, CommandHandler,ContextTypes, JobQueue, CallbackQueryHandler)
@@ -8,6 +9,7 @@ from pathlib import Path
 import random
 from datetime import time
 from collections import deque
+from log import logger, LoggerWriter
 
 load_dotenv()
 
@@ -19,12 +21,10 @@ QUIZ_INTERVAL = int(os.getenv("QUIZ_INTERVAL", "3600"))
 ACTIVE_CHATS_FILE = Path(os.getenv("ACTIVE_CHATS_FILE"))
 QUIZ_CACHE_FILE = Path(os.getenv("QUIZ_CACHE_FILE"))
 
+sys.stdout = LoggerWriter(logger.info)
+
 schedule = [
-    ("morning", time(hour=9-3, minute=0)),
-    ("morning_2", time(hour=11-3, minute=0)),
-    ("high_noon", time(hour=12-3, minute=0)),
     ("afternoon", time(hour=17-3, minute=0)),
-    ("afternoon_2", time(hour=19-3, minute=0)),
     ("evening", time(hour=21-3, minute=0))
 ]
 
@@ -166,15 +166,18 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 async def stop(update: Update, context: ContextTypes.DEFAULT_TYPE):
     chat_id = update.effective_chat.id
-    job_name = str(chat_id)
 
-    jobs = context.job_queue.get_jobs_by_name(job_name)
-    if not jobs:
-        await update.message.reply_text("No active quiz job found for this chat.")
-        return
+    for label, when in schedule:
+        job_name = f"{label}-{chat_id}"
 
-    for job in jobs:
-        job.schedule_removal()
+        jobs = context.job_queue.get_jobs_by_name(job_name)
+        if not jobs:
+            await update.message.reply_text("No active quiz job found for this chat.")
+            return
+
+        for job in jobs:
+            print(f"Scheduled {label} quiz for chat {chat_id} at {when.strftime('%H:%M')} got removed")
+            job.schedule_removal()
 
     active_chats.discard(chat_id)
     save_active_chats(active_chats)
@@ -373,8 +376,10 @@ async def handle_explain_button(update: Update, context: ContextTypes.DEFAULT_TY
         await query.message.reply_text("クイズが見つからなかったみたい。")
         return
 
-    question = quiz["question"]
+    question = f'{quiz["question"]}, as you know right answer is "{quiz["options"][quiz["correct_option_id"]]}"'
     prompt = EXPLAIN_PROMPT.format(question=question)
+
+    print('EXPLAIN prompt', prompt)
 
     try:
         await context.bot.send_message(
