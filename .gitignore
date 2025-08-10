@@ -1,3 +1,5 @@
 .env
 bin
 group_chats.txt
+__pycache__
+logs

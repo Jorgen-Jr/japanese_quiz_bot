@@ -458,3 +458,7 @@
 {"question": "[N4] これは私の父が_______車です。", "options": ["買った", "買う", "買って", "買い"], "correct_option_id": 0, "explanation": "『買った車』 means 'the car my father bought'. The past plain form is used to modify the noun 車."}
 {"question": "[N3] この映画は思ったより_______なかった。", "options": ["おもしろく", "おもしろい", "おもしろかった", "おもしろさ"], "correct_option_id": 0, "explanation": "『〜より〜なかった』 needs the negative adverbial form; 'おもしろくなかった'=was not interesting.「思ったよりおもしろくなかった」です。"}
 {"question": "[N4] 彼は日本語を毎日_______います。", "options": ["習って", "買って", "作って", "洗って"], "correct_option_id": 0, "explanation": "『習って』 means 'learning'. 毎日日本語を習っています means 'He is learning Japanese every day.'"}
+{"question": "[N4] Which of the following means 'to borrow' in Japanese?", "options": ["かりる", "かく", "はしる", "おきる"], "correct_option_id": 0, "explanation": "『かりる』 means 'to borrow'. It is written as 借りる in kanji."}
+{"question": "[N4] 明日は雨が_______そうです。", "options": ["降る", "行く", "食べる", "話す"], "correct_option_id": 0, "explanation": "『降る』 means 'to fall' (as in rain). The sentence says 'It seems it will rain tomorrow.' 雨が降る。"}
+{"question": "[N4] 昼ご飯に寿司を_______。", "options": ["食べました", "書きました", "走りました", "待ちました"], "correct_option_id": 0, "explanation": "『食べました』 means 'ate'. For lunch, I ate sushi. 寿司は食べものですから「食べました」を使います。"}
+{"question": "[N3] 彼が旅行に行くことを親に_______。", "options": ["話した", "話して", "話す", "話される"], "correct_option_id": 0, "explanation": "『旅行に行くことを親に話した』 means 'told his parents about going on a trip.' Use past tense verb '話した' for completed action."}
